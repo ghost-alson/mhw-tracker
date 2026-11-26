@@ -61,16 +61,16 @@ details.group.complete{border-color:#d4af37;background:linear-gradient(180deg,#f
 #crownRows{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
 .crown-group{grid-column:1/-1;font-family:"Cinzel",Georgia,serif;font-weight:700;color:#8a5a12;padding:10px 0 0;font-size:14px}
 .mon-card{background:#fffaf0;border:1px solid #dcc79c;border-radius:14px;padding:12px;box-shadow:0 2px 6px rgba(60,40,10,.12)}
-.mon-card .mon{display:flex;gap:10px;align-items:center;margin-bottom:10px}
-.mon-card .mon img{width:56px;height:56px;border-radius:12px;background:#2b2118;flex:none;object-fit:cover}
-.mon-card .mon b{font-size:15px}
+.mon-card .mon{display:block;text-align:center;margin-bottom:10px}
+.mon-card .mon img{width:112px;height:112px;border-radius:14px;background:#2b2118;object-fit:cover;margin:0 auto 8px;display:block}
+.mon-card .mon b{font-size:16px;display:block}
 .mon-card .checks{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .mon-card label.cb{display:flex;align-items:center;gap:7px;background:#f3e8c8;border:1px solid #dcc79c;border-radius:9px;padding:8px 9px;font-size:13px;cursor:pointer}
 .mon-card label.cb input{width:20px;height:20px;accent-color:#d4a437;cursor:pointer;margin:0;flex:none}
 .mon-card label.cb:has(input:checked){background:#ffe9a8;border-color:#d4a437;font-weight:700}
 .mon-card.all-done{border-color:#d4a437;box-shadow:0 0 0 2px rgba(212,164,55,.35)}
 .mon-card.all-done .mon b::after{content:" \1F451";font-size:13px}
-@media(max-width:600px){#crownRows{grid-template-columns:repeat(2,1fr);gap:10px}.mon-card .mon img{width:44px;height:44px}}
+@media(max-width:600px){#crownRows{grid-template-columns:repeat(2,1fr);gap:10px}.mon-card .mon img{width:88px;height:88px}}
 button.refresh{background:linear-gradient(180deg,#f0c96a,#d4a437);color:#2b1d05;border:0;border-radius:99px;padding:11px 20px;font-size:15px;font-weight:700;cursor:pointer;font-family:"Cinzel",Georgia,serif;letter-spacing:.03em;box-shadow:0 4px 14px rgba(212,164,55,.35);transition:transform .15s ease,box-shadow .15s ease}
 button.refresh:hover{box-shadow:0 6px 20px rgba(212,164,55,.5)}
 button.refresh:active{transform:scale(.96)}
