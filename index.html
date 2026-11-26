@@ -206,7 +206,7 @@ function render(data){
   var cu=document.getElementById('catchups'); cu.innerHTML='';
   Object.keys(am).forEach(function(n){ if(am[n].unlocked && !qm[n].unlocked){
     var d=document.createElement('div'); d.className='ach';
-    d.innerHTML='<img class="icon" src="'+am[n].iconOpen+'" alt=""><div><div class="ach-name"></div><div class="ach-desc"></div><div class="ach-status"><span class="tag q">qunyx. only</span>Ghost. has it — qunyx. still needs it.</div></div>';
+    d.innerHTML='<img class="icon" src="'+am[n].iconOpen+'" alt=""><div><div class="ach-name"></div><div class="ach-desc"></div><div class="ach-status"><span class="tag q">qunyx. only</span>qunyx. still needs it.</div></div>';
     d.querySelector('.ach-name').textContent=n; d.querySelector('.ach-desc').textContent=am[n].desc; cu.appendChild(d);
   }});
   // groups
@@ -217,10 +217,9 @@ function render(data){
     var bothLocked=!a.unlocked && !q.unlocked, aOnly=a.unlocked && !q.unlocked, qOnly=q.unlocked && !a.unlocked, bothDone=a.unlocked && q.unlocked;
     el.dataset.status = bothLocked?'both':(aOnly?'qunyx':(qOnly?'alson': 'done'));
     if(bothDone){ img.src=a.iconOpen; el.classList.add('done'); st.innerHTML='<span class="tag">done — both</span>'; }
-    else if(aOnly){ img.src=a.iconOpen; st.innerHTML='<span class="tag q">qunyx. only</span>Ghost. has it.'; }
+    else if(aOnly){ img.src=a.iconOpen; st.innerHTML='<span class="tag q">qunyx. only</span>'; }
     else if(qOnly){ img.src=q.iconOpen; st.innerHTML='<span class="tag">Ghost. only</span>'; }
     else { img.src=a.iconClosed; el.classList.add('dim'); st.innerHTML='<span class="tag">both need it</span>'; }
-    if(el.getAttribute('data-quick')==='1') st.innerHTML+=' <span class="tag q">quick win</span>';
   });
   document.querySelectorAll('details.group[data-group]').forEach(function(g){
     var missing=g.querySelectorAll('.ach[data-status="both"], .ach[data-status="qunyx"], .ach[data-status="alson"]').length;
