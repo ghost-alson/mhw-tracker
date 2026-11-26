@@ -84,9 +84,8 @@ button.refresh:active{transform:scale(.96)}
 <div><div class="big" id="qunyxCount">36 / 100</div><div>qunyx.</div><div class="bar"><i id="qunyxBar" style="width:0%"></i></div><div><a href="https://steamcommunity.com/id/Quunyx/">qunyx.'s Steam</a></div></div>
 <div><div class="big" id="bothMissing">62</div><div>missing for <b>both</b> of you</div><p class="muted" style="margin:8px 0 0">Same 62.</p></div>
 </div>
-<p id="updated" class="muted">Last updated from Steam: 27 Nov 2026</p>
-<p><button class="refresh" id="refreshBtn">Check for updates</button> <span id="refreshMsg" class="muted"></span></p>
-<p class="muted">Updated daily from Steam. “Check for updates” re-reads the latest snapshot.</p>
+<p style="text-align:center;margin:16px 0 6px"><button class="refresh" id="refreshBtn">Check for updates</button></p>
+<p id="updated" class="muted" style="text-align:center;margin:0">Last updated: 27 Nov 2026</p>
 </div>
 
 <div class="card"><h2 style="margin-top:0">qunyx.-only catch-ups (2)</h2><p>Ghost. has these already:</p><div id="catchups"></div></div>
@@ -191,7 +190,7 @@ function render(data){
   document.getElementById('qunyxBar').style.width=Q.unlocked+'%';
   var bothMissing=0; Object.keys(am).forEach(function(n){if(!am[n].unlocked && !qm[n].unlocked) bothMissing++});
   document.getElementById('bothMissing').textContent=bothMissing;
-  document.getElementById('updated').textContent='Last updated from Steam: '+data.updated_at;
+  var _d=new Date(data.updated_at); document.getElementById('updated').textContent='Last updated: '+(isNaN(_d)?data.updated_at:_d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}));
   // catchups: unlocked by Ghost., locked by qunyx
   var cu=document.getElementById('catchups'); cu.innerHTML='';
   Object.keys(am).forEach(function(n){ if(am[n].unlocked && !qm[n].unlocked){
@@ -246,8 +245,8 @@ function applyFilter(f){
 }
 document.querySelectorAll('#filters button').forEach(function(b){b.addEventListener('click',function(){applyFilter(b.dataset.f)})});
 function load(){
-  fetch('snapshot.json?cb='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok) throw new Error('no snapshot'); return r.json()}).then(function(d){render(d); document.getElementById('refreshMsg').textContent='Loaded latest snapshot.'}).catch(function(){render(FALLBACK); document.getElementById('refreshMsg').textContent='Showing the snapshot built into the page (snapshot.json not reachable).'});
+  fetch('snapshot.json?cb='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok) throw new Error('no snapshot'); return r.json()}).then(function(d){render(d)}).catch(function(){render(FALLBACK)});
 }
-document.getElementById('refreshBtn').addEventListener('click',function(){document.getElementById('refreshMsg').textContent='Checking…'; load();});
+document.getElementById('refreshBtn').addEventListener('click',function(){load();});
 render(FALLBACK); applyFilter('all'); load();
 </script></body></html>
