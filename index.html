@@ -235,7 +235,7 @@ function render(data){
     var src=(am[n].unlocked?am[n].iconOpen:qm[n].iconOpen);
     d.innerHTML='<img class="icon" src="'+src+'" alt=""><div><div class="ach-name"></div><div class="ach-desc"></div><div class="ach-status"></div></div>';
     d.querySelector('.ach-name').textContent=n; d.querySelector('.ach-desc').textContent=am[n].desc;
-    d.querySelector('.ach-status').textContent=(am[n].unlocked && qm[n].unlocked)?'Both have it':(am[n].unlocked?'Ghost. has it':'qunyx. has it');
+    d.querySelector('.ach-status').innerHTML=(am[n].unlocked && qm[n].unlocked)?'<span class="tag">done — both</span>':(am[n].unlocked?'<span class="tag q">qunyx. only</span>':'<span class="tag">Ghost. only</span>');
     ul.appendChild(d);
   }});
   document.getElementById('unlockedCount').textContent=doneCount+' unlocked by at least one of you';
