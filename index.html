@@ -24,9 +24,9 @@ h1,h2,h3,details.group summary{font-family:"Cinzel",Georgia,serif;letter-spacing
 .card{background:linear-gradient(180deg,var(--parchment),var(--parchment2));color:var(--ink);border:1px solid #d8c49a;border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 10px 28px rgba(0,0,0,.35)}
 .card h2{margin:0 0 6px;color:#3a2a12;font-size:22px}
 .card h2::after{content:"";display:block;width:56px;height:3px;background:var(--gold);border-radius:99px;margin-top:8px}
-.score-logo{background:#1d150c;border-radius:16px 16px 0 0;margin:-22px -22px 18px;padding:16px 12px 10px;text-align:center}
-.score-logo img{width:min(340px,72vw);height:auto;display:block;margin:0 auto}
-@media(max-width:600px){.score-logo{margin:-16px -16px 14px}}
+.score-badge{text-align:center;margin:2px 0 14px}
+.score-badge .badge{display:inline-block;background:#1d150c;border-radius:14px;padding:12px 18px 8px}
+.score-badge img{width:min(280px,64vw);height:auto;display:block}
 .score{display:flex;gap:12px;flex-wrap:wrap}
 .score>div{flex:1;min-width:150px;background:var(--forest2);color:#f3ead3;border:1px solid #6b5a2e;border-radius:14px;padding:16px;text-align:center}
 .score>div a{color:#f0c96a}
@@ -90,7 +90,7 @@ button.refresh:active{transform:scale(.96)}
 <div class="snow" aria-hidden="true"><span style="left:3%;animation-delay:0s;animation-duration:14s;font-size:14px">❄</span><span style="left:9%;animation-delay:2s;animation-duration:18s;font-size:10px">❄</span><span style="left:16%;animation-delay:5s;animation-duration:13s;font-size:16px">❄</span><span style="left:24%;animation-delay:1s;animation-duration:17s;font-size:11px">❄</span><span style="left:31%;animation-delay:7s;animation-duration:15s;font-size:13px">❄</span><span style="left:38%;animation-delay:3s;animation-duration:19s;font-size:9px">❄</span><span style="left:46%;animation-delay:0s;animation-duration:14s;font-size:15px">❄</span><span style="left:53%;animation-delay:6s;animation-duration:16s;font-size:10px">❄</span><span style="left:61%;animation-delay:2s;animation-duration:18s;font-size:14px">❄</span><span style="left:68%;animation-delay:8s;animation-duration:13s;font-size:11px">❄</span><span style="left:75%;animation-delay:4s;animation-duration:17s;font-size:15px">❄</span><span style="left:82%;animation-delay:1s;animation-duration:15s;font-size:10px">❄</span><span style="left:90%;animation-delay:5s;animation-duration:19s;font-size:13px">❄</span><span style="left:97%;animation-delay:3s;animation-duration:14s;font-size:9px">❄</span></div>
 
 <main class="wrap">
-<div class="card"><div class="score-logo"><img src="https://monsterhunterwiki.org/images/b/bd/MHWI-Logo.png" alt="Monster Hunter World: Iceborne" onerror="this.onerror=null;this.src='https://cdn.cloudflare.steamstatic.com/steam/apps/582010/logo.png'"></div><div class="score">
+<div class="card"><div class="score-badge"><span class="badge"><img src="https://monsterhunterwiki.org/images/b/bd/MHWI-Logo.png" alt="Monster Hunter World: Iceborne" onerror="this.onerror=null;this.src='https://cdn.cloudflare.steamstatic.com/steam/apps/582010/logo.png'"></span></div><div class="score">
 <div><div class="big" id="alsonCount">38 / 100</div><div>Ghost.</div><div class="bar"><i id="alsonBar" style="width:0%"></i></div><div><a href="https://steamcommunity.com/id/alsonn/">Ghost.'s Steam</a></div></div>
 <div><div class="big" id="qunyxCount">36 / 100</div><div>qunyx.</div><div class="bar"><i id="qunyxBar" style="width:0%"></i></div><div><a href="https://steamcommunity.com/id/Quunyx/">qunyx.'s Steam</a></div></div>
 <div><div class="big" id="bothMissing">62</div><div>missing for <b>both</b> of you</div><p class="muted" style="margin:8px 0 0">Same 62.</p></div>
