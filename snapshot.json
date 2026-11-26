@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-27T03:38:05+08:00",
+  "updated_at": "2026-11-27T03:38:45+08:00",
   "game": "Monster Hunter: World (582010)",
   "players": {
     "alson": {
       "steam_id": "76561197968136562",
       "profile": "https://steamcommunity.com/id/alsonn/",
-      "unlocked": 0,
+      "unlocked": 38,
       "achievements": [
         {
           "name": "Welcome to the New World",
           "desc": "Earn the right to take on two-star assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1594296368,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/ca007416b07fc3076e1c4ec71d3ce56d60d9412c.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/a1e07a657b94c6355b50c10b64906cc32d573857.jpg"
@@ -18,7 +18,7 @@
         {
           "name": "Nothing Stops This Commission",
           "desc": "Earn the right to take on three-star assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1594389505,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/44fd2b57a002ae2a0e695307c8e091832df56a62.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/170256de23e0e0be24ac69f5510f74a887b036cc.jpg"
@@ -26,7 +26,7 @@
         {
           "name": "Defender of Astera",
           "desc": "Earn the right to take on four-star assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1595091042,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/d92415ba82280471fc4827937ecbdc352edebcf2.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/10a7dd9995b8ffae25f90e4dddc014b03a09f2be.jpg"
@@ -34,7 +34,7 @@
         {
           "name": "Into the Deep",
           "desc": "Earn the right to take on five-star assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1598542152,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/0e081a4e6395c9ed7b3609a932be794d7be6e519.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/808120f8494bc41c0af898a39b4bb3b6abab5cce.jpg"
@@ -42,7 +42,7 @@
         {
           "name": "Death Begets Life",
           "desc": "Successfully guide Zorah Magdaros.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739204714,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/ff6f6f2afdfa60defa2c491911727498f1b797c6.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/02f71cfd5e52044720f5e8794ad6c9928c48e79a.jpg"
@@ -50,7 +50,7 @@
         {
           "name": "The Empress of the Highlands",
           "desc": "Earn the right to take on seven-star assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739381120,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/f717a6d37079ce66e07b68056e599db79f14c41a.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/91828efa7e920b5c74ecf952803b3c78516300de.jpg"
@@ -58,7 +58,7 @@
         {
           "name": "One Shall Stand, One Shall Fall",
           "desc": "Earn the right to take on eight-star assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739466458,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/ef848ea40e4f5834dd322f9cb70221f8977a65e1.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/73f84995b2ad08c0d2ad49302631768fe5190736.jpg"
@@ -66,7 +66,7 @@
         {
           "name": "The Sapphire Star",
           "desc": "Solve the mystery of the Elder Crossing.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739642721,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/599373a44af0f8bdb72c8b13ced48cb712c2d9b9.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/1122a5179d2959b60b701493af25f7c67bf70253.jpg"
@@ -74,7 +74,7 @@
         {
           "name": "The Hunters Life for Me",
           "desc": "Complete 50 optional quests.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740505742,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/7efcac2138aa7b582d3965b3079861a84c6c1f48.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/9b08e865ae4eef6d4d0257a5f4be3116784ca961.jpg"
@@ -82,7 +82,7 @@
         {
           "name": "An Inquisitive Mind",
           "desc": "Complete your first investigation.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739042164,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/8aa456e843a330c94b4a6efda6ee646ed0f178b0.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/23f855de051d3ae04c9fd22c9b27914ff6ba9dc1.jpg"
@@ -90,7 +90,7 @@
         {
           "name": "New World Settler",
           "desc": "Establish five camps.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739198743,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/200da6e7f45c297a90d11f0d2546205ec6fbd587.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/92b18a8ec402a2490f118e9a88f13cafff7f7ed4.jpg"
@@ -98,7 +98,7 @@
         {
           "name": "The Art of Camouflage",
           "desc": "Escape the Jagras pack by hiding in some shrubs.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1594041284,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/247e598c7b8693c1b1d1a1838171daa78d06d003.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/e572edbfba03fb97c5dc2f2e280c31ec152aeecb.jpg"
@@ -106,7 +106,7 @@
         {
           "name": "Mmm, So Tasty!",
           "desc": "Cook your first well-done steak.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1594299937,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/ebe2e175cf6dfc7db2f7d238efbe40dddfc1c9c8.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/55b7b79c20623449e366a3e587056b03db5e734c.jpg"
@@ -114,7 +114,7 @@
         {
           "name": "The Bigger They Are...",
           "desc": "Mount your first monster.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1738864109,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/ce047890391db74bf88cee609fe8dbdc03dd7369.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/5b3b9995d7f819c99596f8869db19c8d12c0b1e7.jpg"
@@ -122,7 +122,7 @@
         {
           "name": "Impregnable Defense",
           "desc": "Obtain five highly rare pieces of armor.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739894763,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/1522041314900ef961d2e0621ebc481f96a30309.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/826cbd7a0f9494fe0941b62a1da348750b6576d6.jpg"
@@ -130,7 +130,7 @@
         {
           "name": "Movin On Up",
           "desc": "Move into an upgraded room.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739120388,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/e8776e40460508bfab6643ee4c59bcc97ebd19f2.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/70c38c10ed97f5a51c3269ac1c4d322eb7e93726.jpg"
@@ -138,7 +138,7 @@
         {
           "name": "First Friends",
           "desc": "Befriend your first Tailraider.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1596555331,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/98c389cb64a3378c911a4f1f966f6e34e668e222.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/1a434db6ef66cffd5ae424adb89f123dff4d78e6.jpg"
@@ -146,7 +146,7 @@
         {
           "name": "Bosom Buddies",
           "desc": "Raise the proficiency of any Palico Gadget to level 10.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739727588,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/5b845945c8c63d3e073f5a9769d378de16a77b6b.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/04d9de70fced3adf68ed1c20c7b6404a232888f6.jpg"
@@ -154,7 +154,7 @@
         {
           "name": "Temper Temper",
           "desc": "Hunt your first tempered monster.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740156153,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/e50b6a0ba2a1a6c3114acca32049519f13948685.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/0c524255f8bd3c3af4b77b3ab7c6042e439957cd.jpg"
@@ -162,7 +162,7 @@
         {
           "name": "Giant Crown",
           "desc": "Record your first silver crown or higher for monsters that appear from low or high rank.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739803839,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/8255bd56850b7c9809c7b9fb917eecd47c18caa6.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/e2907e12be9e6e924e855f2db8c1c00b0ef215a1.jpg"
@@ -170,7 +170,7 @@
         {
           "name": "Capture Novice",
           "desc": "Capture your first monster.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1594410195,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/3927ec9d7007ba4b76504597051e9be8416a8cec.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/caa59189c12c52030f0d14b90c0a2623dc9ecbec.jpg"
@@ -178,7 +178,7 @@
         {
           "name": "Monster Slayer",
           "desc": "Hunt 100 large monsters.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740330426,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/9f964e79e2b0029223e5dbb517b3041476ab7fdf.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/ecca9d856c1744c61b50c72062ec1d2e8d56ef6b.jpg"
@@ -186,7 +186,7 @@
         {
           "name": "HELP!",
           "desc": "Fire an SOS flare for the first time.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739199140,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/581783129ce56bb8d93abcf27f876b1da75e14ff.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/59005a50f06b8aca450f1567053ffff1192ebd63.jpg"
@@ -194,7 +194,7 @@
         {
           "name": "Hunters United",
           "desc": "Complete a quest via multiplayer.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1594401191,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/667ef144f47b859fb19c809357a20411d29f9f5e.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/1f753f3edfc578c88d3c076f9f6fc4e0d272f4a9.jpg"
@@ -202,7 +202,7 @@
         {
           "name": "Hunters United Forever",
           "desc": "Complete 100 quests via multiplayer.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740507069,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/c424dacafa57cefebfb5dd1ec15259ff0a5ddd12.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/4bf8679771de1418cb490fdf88783b3aa426576d.jpg"
@@ -210,7 +210,7 @@
         {
           "name": "The Beginning of a New Expedition",
           "desc": "Earn the right to take on one-star master rank assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739644707,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/5adbe4f7bd30b4cc6c231b25d5e2aef4b4cfa771.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/765fa26a30f56f66b4624e4d2b38c18f7e5f17e8.jpg"
@@ -218,7 +218,7 @@
         {
           "name": "Time to Get Serious",
           "desc": "Earn the right to take on two-star master rank assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739726233,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/e95c6f9619425ab8f463db9495aff6b96918ba53.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/135c2614efd1af0c1f844271e459064f7fdb24a7.jpg"
@@ -226,7 +226,7 @@
         {
           "name": "The Elusive Elder Dragon",
           "desc": "Earn the right to take on three-star master rank assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739812507,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/0737aecad60a04406e6f80eaa0846edc424267fe.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/030ca55fd6d25ad11184a30eb150266d9454785c.jpg"
@@ -234,7 +234,7 @@
         {
           "name": "Source of Relaxation",
           "desc": "Spend some time in a natural hot spring.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739722239,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/d3e8b27c08a2aff81166628146df2774cd58f242.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/18a8aabc8c01bf628b04fe81eb917547c1e9e5c3.jpg"
@@ -242,7 +242,7 @@
         {
           "name": "Clutch Claw Neophyte",
           "desc": "Study the ways of the clutch claw.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740419040,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/91e48cc88b274bd411dfbfa2d0f9f666a08454a9.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/44a5de531256977e656e95ccbb02d2ed5ecd2174.jpg"
@@ -250,7 +250,7 @@
         {
           "name": "Personal Treasure",
           "desc": "Equip your first pendant.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740156207,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/24d6a548b49c3736c752da409fc0aa2f7dccf7d7.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/2942a56e55e3163f37238466f64161935aac1514.jpg"
@@ -258,7 +258,7 @@
         {
           "name": "First Ride",
           "desc": "Use your first Raider Ride.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739644707,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/20c517052bd49efb47d7ad9e5549e837361c2e6e.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/9bbdd36ddac55e4c4cec7edc884af29c663db5fb.jpg"
@@ -266,7 +266,7 @@
         {
           "name": "Experienced Rider",
           "desc": "Use Raider Ride many times.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740075342,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/b8c50715e4941a267ac14fcaa400f8b7f45b59b1.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/acdcc3490dc8fdc4b6ace2f70e6005dd72de9c3e.jpg"
@@ -274,7 +274,7 @@
         {
           "name": "Eager Engineer",
           "desc": "Help the Steamworks 20 times.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739723902,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/4948093f4a512083dfa47e12d38920601ff97b42.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/6a269b2af84f65d472e98f16c2178c09d03b2845.jpg"
@@ -282,7 +282,7 @@
         {
           "name": "Skilled Steamworker",
           "desc": "Send the Steamworks into overdrive.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739724022,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/227004d1fd859a36c81a1f33db68451bdf7e191a.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/bd2419ab7062c76742c4f620651cd43e2c834302.jpg"
@@ -290,7 +290,7 @@
         {
           "name": "Another Miniature Crown",
           "desc": "Obtain your first miniature crown for capturing endemic life in master rank.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739813776,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/731eeadfa0c533c6cbf8c6f25fa06b7a29b91927.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/07bee3d2b2d0e7c92c93c91691075dcf482df0a9.jpg"
@@ -298,7 +298,7 @@
         {
           "name": "Another Giant Crown",
           "desc": "Obtain your first gold crown for capturing endemic life in master rank.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739726230,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/f8d0929f59ca5e502bef19de5e7d95d0ce30c766.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/2de932977d56b36f5dcdd3d4b3e74474e6626b67.jpg"
@@ -306,7 +306,7 @@
         {
           "name": "The True Hunt Begins",
           "desc": "Hunt your first large monster in a master rank quest.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739644707,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/31572773c3999c2d324b6eb733926ceb37fa6c94.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/f9c980e8730f2cc4c65fc6a869bafe4bda342893.jpg"
@@ -812,12 +812,12 @@
     "qunyx": {
       "steam_id": "76561198870576609",
       "profile": "https://steamcommunity.com/id/Quunyx/",
-      "unlocked": 0,
+      "unlocked": 38,
       "achievements": [
         {
           "name": "Welcome to the New World",
           "desc": "Earn the right to take on two-star assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1738782111,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/ca007416b07fc3076e1c4ec71d3ce56d60d9412c.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/a1e07a657b94c6355b50c10b64906cc32d573857.jpg"
@@ -825,7 +825,7 @@
         {
           "name": "Nothing Stops This Commission",
           "desc": "Earn the right to take on three-star assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1738783286,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/44fd2b57a002ae2a0e695307c8e091832df56a62.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/170256de23e0e0be24ac69f5510f74a887b036cc.jpg"
@@ -833,7 +833,7 @@
         {
           "name": "Defender of Astera",
           "desc": "Earn the right to take on four-star assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1738955297,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/d92415ba82280471fc4827937ecbdc352edebcf2.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/10a7dd9995b8ffae25f90e4dddc014b03a09f2be.jpg"
@@ -841,7 +841,7 @@
         {
           "name": "Into the Deep",
           "desc": "Earn the right to take on five-star assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739198588,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/0e081a4e6395c9ed7b3609a932be794d7be6e519.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/808120f8494bc41c0af898a39b4bb3b6abab5cce.jpg"
@@ -849,7 +849,7 @@
         {
           "name": "Death Begets Life",
           "desc": "Successfully guide Zorah Magdaros.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739204941,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/ff6f6f2afdfa60defa2c491911727498f1b797c6.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/02f71cfd5e52044720f5e8794ad6c9928c48e79a.jpg"
@@ -857,7 +857,7 @@
         {
           "name": "The Empress of the Highlands",
           "desc": "Earn the right to take on seven-star assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739381128,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/f717a6d37079ce66e07b68056e599db79f14c41a.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/91828efa7e920b5c74ecf952803b3c78516300de.jpg"
@@ -865,7 +865,7 @@
         {
           "name": "One Shall Stand, One Shall Fall",
           "desc": "Earn the right to take on eight-star assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739466460,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/ef848ea40e4f5834dd322f9cb70221f8977a65e1.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/73f84995b2ad08c0d2ad49302631768fe5190736.jpg"
@@ -873,7 +873,7 @@
         {
           "name": "The Sapphire Star",
           "desc": "Solve the mystery of the Elder Crossing.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739642721,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/599373a44af0f8bdb72c8b13ced48cb712c2d9b9.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/1122a5179d2959b60b701493af25f7c67bf70253.jpg"
@@ -881,7 +881,7 @@
         {
           "name": "The Hunters Life for Me",
           "desc": "Complete 50 optional quests.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740589673,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/7efcac2138aa7b582d3965b3079861a84c6c1f48.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/9b08e865ae4eef6d4d0257a5f4be3116784ca961.jpg"
@@ -889,7 +889,7 @@
         {
           "name": "An Inquisitive Mind",
           "desc": "Complete your first investigation.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739042169,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/8aa456e843a330c94b4a6efda6ee646ed0f178b0.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/23f855de051d3ae04c9fd22c9b27914ff6ba9dc1.jpg"
@@ -897,7 +897,7 @@
         {
           "name": "New World Settler",
           "desc": "Establish five camps.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739897520,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/200da6e7f45c297a90d11f0d2546205ec6fbd587.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/92b18a8ec402a2490f118e9a88f13cafff7f7ed4.jpg"
@@ -905,7 +905,7 @@
         {
           "name": "The Art of Camouflage",
           "desc": "Escape the Jagras pack by hiding in some shrubs.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1738778623,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/247e598c7b8693c1b1d1a1838171daa78d06d003.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/e572edbfba03fb97c5dc2f2e280c31ec152aeecb.jpg"
@@ -913,7 +913,7 @@
         {
           "name": "Mmm, So Tasty!",
           "desc": "Cook your first well-done steak.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1795716181,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/ebe2e175cf6dfc7db2f7d238efbe40dddfc1c9c8.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/55b7b79c20623449e366a3e587056b03db5e734c.jpg"
@@ -921,7 +921,7 @@
         {
           "name": "The Bigger They Are...",
           "desc": "Mount your first monster.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740076692,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/ce047890391db74bf88cee609fe8dbdc03dd7369.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/5b3b9995d7f819c99596f8869db19c8d12c0b1e7.jpg"
@@ -929,7 +929,7 @@
         {
           "name": "Impregnable Defense",
           "desc": "Obtain five highly rare pieces of armor.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740070259,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/1522041314900ef961d2e0621ebc481f96a30309.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/826cbd7a0f9494fe0941b62a1da348750b6576d6.jpg"
@@ -937,7 +937,7 @@
         {
           "name": "Movin On Up",
           "desc": "Move into an upgraded room.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1795715911,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/e8776e40460508bfab6643ee4c59bcc97ebd19f2.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/70c38c10ed97f5a51c3269ac1c4d322eb7e93726.jpg"
@@ -945,7 +945,7 @@
         {
           "name": "First Friends",
           "desc": "Befriend your first Tailraider.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739121272,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/98c389cb64a3378c911a4f1f966f6e34e668e222.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/1a434db6ef66cffd5ae424adb89f123dff4d78e6.jpg"
@@ -953,7 +953,7 @@
         {
           "name": "Bosom Buddies",
           "desc": "Raise the proficiency of any Palico Gadget to level 10.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739555740,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/5b845945c8c63d3e073f5a9769d378de16a77b6b.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/04d9de70fced3adf68ed1c20c7b6404a232888f6.jpg"
@@ -961,7 +961,7 @@
         {
           "name": "Temper Temper",
           "desc": "Hunt your first tempered monster.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740156144,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/e50b6a0ba2a1a6c3114acca32049519f13948685.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/0c524255f8bd3c3af4b77b3ab7c6042e439957cd.jpg"
@@ -969,7 +969,7 @@
         {
           "name": "Giant Crown",
           "desc": "Record your first silver crown or higher for monsters that appear from low or high rank.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740073938,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/8255bd56850b7c9809c7b9fb917eecd47c18caa6.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/e2907e12be9e6e924e855f2db8c1c00b0ef215a1.jpg"
@@ -977,7 +977,7 @@
         {
           "name": "Capture Novice",
           "desc": "Capture your first monster.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740073939,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/3927ec9d7007ba4b76504597051e9be8416a8cec.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/caa59189c12c52030f0d14b90c0a2623dc9ecbec.jpg"
@@ -985,7 +985,7 @@
         {
           "name": "Monster Slayer",
           "desc": "Hunt 100 large monsters.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740678470,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/9f964e79e2b0029223e5dbb517b3041476ab7fdf.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/ecca9d856c1744c61b50c72062ec1d2e8d56ef6b.jpg"
@@ -993,7 +993,7 @@
         {
           "name": "HELP!",
           "desc": "Fire an SOS flare for the first time.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1738864584,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/581783129ce56bb8d93abcf27f876b1da75e14ff.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/59005a50f06b8aca450f1567053ffff1192ebd63.jpg"
@@ -1001,7 +1001,7 @@
         {
           "name": "Hunters United",
           "desc": "Complete a quest via multiplayer.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1738783287,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/667ef144f47b859fb19c809357a20411d29f9f5e.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/1f753f3edfc578c88d3c076f9f6fc4e0d272f4a9.jpg"
@@ -1009,7 +1009,7 @@
         {
           "name": "Hunters United Forever",
           "desc": "Complete 100 quests via multiplayer.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740507329,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/c424dacafa57cefebfb5dd1ec15259ff0a5ddd12.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/4bf8679771de1418cb490fdf88783b3aa426576d.jpg"
@@ -1017,7 +1017,7 @@
         {
           "name": "The Beginning of a New Expedition",
           "desc": "Earn the right to take on one-star master rank assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739644716,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/5adbe4f7bd30b4cc6c231b25d5e2aef4b4cfa771.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/765fa26a30f56f66b4624e4d2b38c18f7e5f17e8.jpg"
@@ -1025,7 +1025,7 @@
         {
           "name": "Time to Get Serious",
           "desc": "Earn the right to take on two-star master rank assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739726242,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/e95c6f9619425ab8f463db9495aff6b96918ba53.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/135c2614efd1af0c1f844271e459064f7fdb24a7.jpg"
@@ -1033,7 +1033,7 @@
         {
           "name": "The Elusive Elder Dragon",
           "desc": "Earn the right to take on three-star master rank assignments.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739812528,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/0737aecad60a04406e6f80eaa0846edc424267fe.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/030ca55fd6d25ad11184a30eb150266d9454785c.jpg"
@@ -1041,7 +1041,7 @@
         {
           "name": "Source of Relaxation",
           "desc": "Spend some time in a natural hot spring.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739643971,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/d3e8b27c08a2aff81166628146df2774cd58f242.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/18a8aabc8c01bf628b04fe81eb917547c1e9e5c3.jpg"
@@ -1049,7 +1049,7 @@
         {
           "name": "Clutch Claw Neophyte",
           "desc": "Study the ways of the clutch claw.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740418997,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/91e48cc88b274bd411dfbfa2d0f9f666a08454a9.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/44a5de531256977e656e95ccbb02d2ed5ecd2174.jpg"
@@ -1057,7 +1057,7 @@
         {
           "name": "Personal Treasure",
           "desc": "Equip your first pendant.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740070365,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/24d6a548b49c3736c752da409fc0aa2f7dccf7d7.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/2942a56e55e3163f37238466f64161935aac1514.jpg"
@@ -1065,7 +1065,7 @@
         {
           "name": "First Ride",
           "desc": "Use your first Raider Ride.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1738782111,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/20c517052bd49efb47d7ad9e5549e837361c2e6e.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/9bbdd36ddac55e4c4cec7edc884af29c663db5fb.jpg"
@@ -1073,7 +1073,7 @@
         {
           "name": "Experienced Rider",
           "desc": "Use Raider Ride many times.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739897806,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/b8c50715e4941a267ac14fcaa400f8b7f45b59b1.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/acdcc3490dc8fdc4b6ace2f70e6005dd72de9c3e.jpg"
@@ -1081,7 +1081,7 @@
         {
           "name": "Eager Engineer",
           "desc": "Help the Steamworks 20 times.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739984577,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/4948093f4a512083dfa47e12d38920601ff97b42.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/6a269b2af84f65d472e98f16c2178c09d03b2845.jpg"
@@ -1089,7 +1089,7 @@
         {
           "name": "Skilled Steamworker",
           "desc": "Send the Steamworks into overdrive.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739984692,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/227004d1fd859a36c81a1f33db68451bdf7e191a.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/bd2419ab7062c76742c4f620651cd43e2c834302.jpg"
@@ -1097,7 +1097,7 @@
         {
           "name": "Another Miniature Crown",
           "desc": "Obtain your first miniature crown for capturing endemic life in master rank.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1740509720,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/731eeadfa0c533c6cbf8c6f25fa06b7a29b91927.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/07bee3d2b2d0e7c92c93c91691075dcf482df0a9.jpg"
@@ -1105,7 +1105,7 @@
         {
           "name": "Another Giant Crown",
           "desc": "Obtain your first gold crown for capturing endemic life in master rank.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739985430,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/f8d0929f59ca5e502bef19de5e7d95d0ce30c766.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/2de932977d56b36f5dcdd3d4b3e74474e6626b67.jpg"
@@ -1113,7 +1113,7 @@
         {
           "name": "The True Hunt Begins",
           "desc": "Hunt your first large monster in a master rank quest.",
-          "unlocked": false,
+          "unlocked": true,
           "ts": 1739644717,
           "iconOpen": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/31572773c3999c2d324b6eb733926ceb37fa6c94.jpg",
           "iconClosed": "https://shared.fastly.steamstatic.com/community_assets/images/apps/582010/f9c980e8730f2cc4c65fc6a869bafe4bda342893.jpg"
