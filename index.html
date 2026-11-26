@@ -55,19 +55,19 @@ details.group.complete{border-color:#d4af37;background:linear-gradient(180deg,#f
 .tag.q{background:#8a5a12;color:#ffe9c4}
 .phase h3{margin:0 0 4px;color:#3a2a12}
 .phase p{margin:0 0 14px;color:var(--ink-soft)}
- .crown-head,.crown-row2{display:grid;grid-template-columns:minmax(150px,1.6fr) repeat(4,72px);gap:8px;align-items:center;padding:9px 0;border-top:1px solid #dcc79c}
-.crown-head{font-family:"Cinzel",Georgia,serif;font-weight:700;font-size:13px;color:#3a2a12;text-align:center}
-.crown-head span:first-child{text-align:left}
-.crown-group{font-family:"Cinzel",Georgia,serif;font-weight:700;color:#8a5a12;padding:14px 0 2px;font-size:14px}
-.crown-row2 .mon{display:flex;gap:10px;align-items:center;min-width:0}
-.crown-row2 .mon img{width:46px;height:46px;border-radius:10px;background:#2b2118;flex:none;object-fit:cover}
-.crown-row2 .mon b{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.crown-row2 label.cb{display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer}
-.crown-row2 input[type=checkbox]{width:26px;height:26px;accent-color:#d4a437;cursor:pointer;margin:0}
-.crown-row2 input[type=checkbox]:checked{box-shadow:0 0 10px rgba(212,164,55,.8)}
-.crown-row2 .cb-label{display:none;font-size:11px;color:var(--ink-soft)}
-.crown-row2.all-done{opacity:.72}
-.crown-row2.all-done .mon b::after{content:" \1F451";font-size:12px}
+#crownRows{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.crown-group{grid-column:1/-1;font-family:"Cinzel",Georgia,serif;font-weight:700;color:#8a5a12;padding:10px 0 0;font-size:14px}
+.mon-card{background:#fffaf0;border:1px solid #dcc79c;border-radius:14px;padding:12px;box-shadow:0 2px 6px rgba(60,40,10,.12)}
+.mon-card .mon{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+.mon-card .mon img{width:56px;height:56px;border-radius:12px;background:#2b2118;flex:none;object-fit:cover}
+.mon-card .mon b{font-size:15px}
+.mon-card .checks{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mon-card label.cb{display:flex;align-items:center;gap:7px;background:#f3e8c8;border:1px solid #dcc79c;border-radius:9px;padding:8px 9px;font-size:13px;cursor:pointer}
+.mon-card label.cb input{width:20px;height:20px;accent-color:#d4a437;cursor:pointer;margin:0;flex:none}
+.mon-card label.cb:has(input:checked){background:#ffe9a8;border-color:#d4a437;font-weight:700}
+.mon-card.all-done{border-color:#d4a437;box-shadow:0 0 0 2px rgba(212,164,55,.35)}
+.mon-card.all-done .mon b::after{content:" \1F451";font-size:13px}
+@media(max-width:600px){#crownRows{grid-template-columns:repeat(2,1fr);gap:10px}.mon-card .mon img{width:44px;height:44px}}
 @media(max-width:600px){.crown-head{display:none}.crown-row2{grid-template-columns:minmax(120px,1.4fr) repeat(4,1fr);gap:6px}.crown-row2 .cb-label{display:block}.crown-row2 .mon img{width:38px;height:38px}}
 button.refresh{background:linear-gradient(180deg,#f0c96a,#d4a437);color:#2b1d05;border:0;border-radius:99px;padding:11px 20px;font-size:15px;font-weight:700;cursor:pointer;font-family:"Cinzel",Georgia,serif;letter-spacing:.03em;box-shadow:0 4px 14px rgba(212,164,55,.35);transition:transform .15s ease,box-shadow .15s ease}
 button.refresh:hover{box-shadow:0 6px 20px rgba(212,164,55,.5)}
@@ -104,7 +104,6 @@ button.refresh:active{transform:scale(.96)}
 <div class="card"><h2 style="margin-top:0">Crown tracker — the 28 base-game crown monsters</h2>
 <p class="muted">Mini + gold large for each. Steam can&apos;t track crowns, so tick these yourself — they save on this device.</p>
 <p id="crownCounts" class="muted" style="font-weight:600;color:#3a2a12"></p>
-<div class="crown-head"><span>Monster</span><span>Ghost.<br>Mini</span><span>Ghost.<br>Gold</span><span>qunyx.<br>Mini</span><span>qunyx.<br>Gold</span></div>
 <div id="crownRows"></div>
 <p class="muted">True crowns: Iceborne monsters + Deviljho / Lunastra. No crown for Shara.</p>
 <p><button class="refresh" id="crownReset" style="padding:8px 16px;font-size:13px">Reset crowns</button></p>
@@ -251,26 +250,29 @@ function crownRender(){
   var counts={ghostMini:0,ghostGold:0,qunyxMini:0,qunyxGold:0}, group='';
   CROWNS.forEach(function(m){
     if(m.group!==group){group=m.group; var gh=document.createElement('div'); gh.className='crown-group'; gh.textContent=group+(group==='Investigations only'?'':' — music quest'); wrap.appendChild(gh);}
-    var row=document.createElement('div'); row.className='crown-row2';
+    var card=document.createElement('div'); card.className='mon-card';
     var mon=document.createElement('div'); mon.className='mon';
     mon.innerHTML='<img src="'+m.icon+'" alt="" loading="lazy"><b></b>';
-    mon.querySelector('b').textContent=m.name; row.appendChild(mon);
-    [['ghost','mini','Ghost. mini'],['ghost','gold','Ghost. gold'],['qunyx','mini','qunyx. mini'],['qunyx','gold','qunyx. gold']].forEach(function(c){
-      var lab=document.createElement('label'); lab.className='cb'; lab.title=c[2]+' crown — '+m.name;
+    mon.querySelector('b').textContent=m.name; card.appendChild(mon);
+    var checks=document.createElement('div'); checks.className='checks';
+    [['ghost','mini'],['ghost','gold'],['qunyx','mini'],['qunyx','gold']].forEach(function(c){
+      var key=c[0]+c[1][0].toUpperCase()+c[1].slice(1);
+      var lab=document.createElement('label'); lab.className='cb'; lab.title=(c[0]==='ghost'?'Ghost.':'qunyx.')+' '+c[1]+' crown — '+m.name;
       var cb=document.createElement('input'); cb.type='checkbox';
-      cb.checked=!!(saved[m.name]&&saved[m.name][c[0]+c[1][0].toUpperCase()+c[1].slice(1)]);
-      if(cb.checked) counts[c[0]+c[1][0].toUpperCase()+c[1].slice(1)]++;
+      cb.checked=!!(saved[m.name]&&saved[m.name][key]);
+      if(cb.checked) counts[key]++;
       cb.addEventListener('change',function(){
         var d=crownLoad(); d[m.name]=d[m.name]||{};
-        d[m.name][c[0]+c[1][0].toUpperCase()+c[1].slice(1)]=cb.checked;
+        d[m.name][key]=cb.checked;
         crownSave(d); crownRender();
       });
-      var sp=document.createElement('span'); sp.className='cb-label'; sp.textContent=(c[0]==='ghost'?'Ghost.':'qunyx.')+' '+(c[1]==='mini'?'mini':'gold');
-      lab.appendChild(cb); lab.appendChild(sp); row.appendChild(lab);
+      var sp=document.createElement('span'); sp.textContent=(c[0]==='ghost'?'Ghost.':'qunyx.')+' '+c[1];
+      lab.appendChild(cb); lab.appendChild(sp); checks.appendChild(lab);
     });
+    card.appendChild(checks);
     var st=saved[m.name]||{};
-    if(st.ghostMini&&st.ghostGold&&st.qunyxMini&&st.qunyxGold) row.classList.add('all-done');
-    wrap.appendChild(row);
+    if(st.ghostMini&&st.ghostGold&&st.qunyxMini&&st.qunyxGold) card.classList.add('all-done');
+    wrap.appendChild(card);
   });
   document.getElementById('crownCounts').textContent='Ghost.: '+counts.ghostMini+' mini · '+counts.ghostGold+' gold  —  qunyx.: '+counts.qunyxMini+' mini · '+counts.qunyxGold+' gold  (of 28 each)';
 }
