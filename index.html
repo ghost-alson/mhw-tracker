@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>MHW: Iceborne — 100% Tracker · ghost. &amp; qunyx.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,9 +44,9 @@ details.group summary:hover{color:#8a5a12}
 details.group summary .count{background:var(--phase,#d4a437);color:#241a05;font-family:"Spectral",Georgia,serif;font-size:13px;font-weight:600;border-radius:99px;padding:2px 10px;align-self:center;white-space:nowrap}
 details.group.complete{border-color:#d4af37;background:linear-gradient(180deg,#f9efc8,#f6ead1)}
 .note{color:var(--ink-soft);margin:0 0 10px;font-style:italic}
-.ach-list{display:block;width:100%}
-.ach{display:flex;width:100%;min-width:0;gap:12px;padding:12px 0;border-top:1px solid #dcc79c;align-items:flex-start;transition:transform .15s ease}
-.ach>div{flex:1;min-width:0}
+.ach-list{display:block !important;width:100%;max-width:100%}
+.ach-list>.ach{display:flex !important;flex-direction:row !important;flex:none !important;width:100% !important;max-width:100% !important;min-width:0;gap:12px;padding:12px 0;border-top:1px solid #dcc79c;align-items:flex-start;transition:transform .15s ease}
+.ach>div{flex:1 1 auto;min-width:0}
 @media(hover:hover){.ach:hover{transform:translateY(-1px)}}
 .ach:active{transform:scale(.98)}
 .ach img.icon{width:56px;height:56px;border-radius:12px;flex:none;background:#2b2118;border:1px solid #d8c49a}
