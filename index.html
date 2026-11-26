@@ -30,9 +30,6 @@ h1{margin:0;font-size:30px;color:#f7e8c3;text-shadow:0 2px 12px rgba(0,0,0,.6)}
 .big{font-family:"Cinzel",Georgia,serif;font-size:36px;font-weight:800;color:#f7d774;animation:pop .6s ease both}
 .bar{height:10px;background:#14100a;border-radius:99px;overflow:hidden;margin-top:10px;border:1px solid #6b5a2e}
 .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--amber),var(--gold));transition:width 1.2s ease}
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
-.filters button{background:#2a1d11;color:#f3ead3;border:1px solid #8a6d3b;border-radius:99px;padding:9px 15px;cursor:pointer;font-family:"Spectral",Georgia,serif}
-.filters button.on{background:var(--amber);border-color:var(--gold);color:#2b1d05;font-weight:600}
 details.group{background:linear-gradient(180deg,var(--parchment),var(--parchment2));color:var(--ink);border:1px solid #d8c49a;border-left:6px solid var(--phase,#d4a437);border-radius:16px;margin:14px 0;padding:6px 16px 14px;box-shadow:0 8px 22px rgba(0,0,0,.28);overflow:hidden}
 details.group[data-group="phase0"]{--phase:#e8a33d}
 details.group[data-group="phase1"]{--phase:#c65b3c}
@@ -94,9 +91,6 @@ button.refresh:active{transform:scale(.96)}
 
 <div class="card"><h2 style="margin-top:0">Crown board — the 28 base-game crown monsters</h2><p class="muted">Mini + gold large for each. Music quests cover 22; the other 6 need investigations.</p><div class="crown-row"><b>Deep Green Blues</b><span>Great Jagras, Pukei-Pukei, Tobi-Kadachi, Anjanath, Rathalos</span></div><div class="crown-row"><b>Wildspire Bolero</b><span>Kulu-Ya-Ku, Barroth, Jyuratodus, Rathian, Diablos</span></div><div class="crown-row"><b>Coral Waltz</b><span>Tzitzi-Ya-Ku, Paolumu, Pink Rathian, Legiana</span></div><div class="crown-row"><b>Effluvial Opera</b><span>Great Girros, Radobaan, Odogaron, Bazelgeuse</span></div><div class="crown-row"><b>Rock N&#x27; Roll Recess</b><span>Dodogama, Uragaan, Lavasioth, Azure Rathalos</span></div><div class="crown-row"><b>Investigations only</b><span>Black Diablos, Kirin, Nergigante, Teostra, Kushala Daora, Vaal Hazak</span></div><p class="muted">True crowns: Iceborne monsters + Deviljho / Lunastra. No crown for Shara.</p></div>
 
-<div class="filters" id="filters">
-<button data-f="all" class="on">All missing</button><button data-f="both">Both need it</button><button data-f="qunyx">qunyx. only</button><button data-f="quick">Quick wins</button><button data-f="done">Already unlocked</button>
-</div>
 <div id="groups">
 <details class="group" data-group="phase0" open><summary><span>✨ Phase 0 — Freebies</span><span class="count"></span></summary><p class="note">First session.</p><div class="ach-list"><div class="ach" data-name="Mmm, So Tasty!" data-quick="1"><img class="icon" alt="" loading="lazy"><div><div class="ach-name"></div><div class="ach-desc">Cook your first well-done steak.</div><div class="ach-status"></div></div></div>
 <div class="ach" data-name="Movin On Up" data-quick="1"><img class="icon" alt="" loading="lazy"><div><div class="ach-name"></div><div class="ach-desc">Move into an upgraded room.</div><div class="ach-status"></div></div></div>
@@ -228,23 +222,6 @@ function render(data){
   }});
   document.getElementById('unlockedCount').textContent=doneCount+' unlocked by at least one of you';
 }
-function applyFilter(f){
-  document.querySelectorAll('#filters button').forEach(function(b){b.classList.toggle('on', b.dataset.f===f)});
-  document.querySelectorAll('.ach[data-name]').forEach(function(el){
-    var s=el.dataset.status, q=el.dataset.quick==='1';
-    var show = f==='all' ? (s!=='done') : f==='both' ? s==='both' : f==='qunyx' ? s==='qunyx' : f==='quick' ? (q && s!=='done') : s==='done';
-    el.style.display=show?'flex':'none';
-  });
-  document.querySelectorAll('details.group[data-group]').forEach(function(g){
-    var vis=g.querySelectorAll('.ach:not([style*="none"])').length;
-    g.style.display=vis?'':'none';
-  });
-  document.getElementById('unlockedGroup').style.display=(f==='done'||f==='all')?'':'none';
-}
-document.querySelectorAll('#filters button').forEach(function(b){b.addEventListener('click',function(){applyFilter(b.dataset.f)})});
-function load(){
-  fetch('snapshot.json?cb='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok) throw new Error('no snapshot'); return r.json()}).then(function(d){render(d)}).catch(function(){render(FALLBACK)});
-}
 document.getElementById('refreshBtn').addEventListener('click',function(){load();});
-render(FALLBACK); applyFilter('all'); load();
+render(FALLBACK); load();
 </script></body></html>
