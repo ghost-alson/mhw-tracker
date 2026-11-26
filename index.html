@@ -2,49 +2,72 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MHW: Iceborne — 100% Tracker · ghost. &amp; qunyx.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <meta name="description" content="Live Monster Hunter World: Iceborne 100% tracker for ghost. (Alson) and qunyx. — data from Steam.">
 <style>
-*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0a1420;color:#e8f1f8;line-height:1.55}
-a{color:#8fd3ff} .hero{position:relative} .hero img{width:100%;height:260px;object-fit:cover;display:block;filter:brightness(.75)}
-.hero-text{position:absolute;left:0;right:0;bottom:0;padding:20px;background:linear-gradient(transparent,rgba(4,12,20,.92))}
-h1{margin:0;font-size:28px} .sub{opacity:.9;margin:4px 0 0}
-.wrap{max-width:920px;margin:0 auto;padding:0 16px 60px}
-.card{background:#122233;border:1px solid #23405c;border-radius:14px;padding:16px;margin:14px 0}
-.score{display:flex;gap:12px;flex-wrap:wrap} .score div{flex:1;min-width:140px;background:#0d1c2c;border:1px solid #23405c;border-radius:12px;padding:14px;text-align:center}
-.big{font-size:34px;font-weight:800} .bar{height:10px;background:#0a1826;border-radius:99px;overflow:hidden;margin-top:8px} .bar i{display:block;height:100%;background:#5ec2ff}
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0} .filters button{background:#122233;color:#e8f1f8;border:1px solid #2c4d6d;border-radius:99px;padding:8px 14px;cursor:pointer} .filters button.on{background:#2b6ea8;border-color:#5ec2ff}
-details.group{background:#122233;border:1px solid #23405c;border-radius:14px;margin:12px 0;padding:6px 14px 12px}
-details.group summary{cursor:pointer;font-weight:700;font-size:17px;padding:10px 0;display:flex;justify-content:space-between;gap:10px}
-.note{opacity:.85;margin:0 0 10px} .ach{display:flex;gap:12px;padding:10px 0;border-top:1px solid #1d3348;align-items:flex-start}
-.ach img.icon{width:56px;height:56px;border-radius:10px;flex:none;background:#0a1826}
-.ach-name{font-weight:700} .ach-desc{font-size:14px;opacity:.9} .ach-status{font-size:13px;margin-top:3px}
-.locked .ach-name{} .done img.icon{} .dim img.icon{filter:grayscale(1);opacity:.55}
-.tag{display:inline-block;background:#1d3a55;border-radius:99px;padding:1px 8px;font-size:12px;margin-right:6px}
-.tag.q{background:#7a4a12} .phase h3{margin:0 0 4px} .phase p{margin:0 0 14px;opacity:.92}
-.crown-row{display:flex;gap:10px;padding:8px 0;border-top:1px solid #1d3348;flex-wrap:wrap} .crown-row b{min-width:170px}
-.hero-cap{font-size:12px;opacity:.7;padding:6px 16px} button.refresh{background:#2b6ea8;color:#fff;border:0;border-radius:10px;padding:10px 16px;font-size:15px;cursor:pointer}
-.muted{opacity:.75;font-size:14px} @media(max-width:600px){h1{font-size:23px} .hero img{height:200px}}
-
-/* lively, subtle — all motion respects reduced-motion below */
-@keyframes fall{0%{transform:translateY(-8vh) translateX(0);opacity:0}10%{opacity:.7}90%{opacity:.5}100%{transform:translateY(108vh) translateX(18px);opacity:0}}
-@keyframes pop{0%{transform:scale(.6);opacity:0}70%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
-@keyframes glowPulse{0%,100%{box-shadow:0 0 8px rgba(255,215,0,.45)}50%{box-shadow:0 0 18px rgba(255,215,0,.8)}}
-.snow{position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden}
-.snow span{position:absolute;top:-8vh;color:#cfe8ff;opacity:.6;animation:fall linear infinite}
-.hero img{animation:heroDrift 26s ease-in-out infinite alternate}
-@keyframes heroDrift{from{transform:scale(1)}to{transform:scale(1.06)}}
-.big{animation:pop .6s ease both}
-.bar i{transition:width 1.2s ease}
-.ach{transition:transform .15s ease}
+*{box-sizing:border-box}
+:root{--forest:#141b10;--forest2:#1c2617;--moss:#2a3a22;--parchment:#f6ead1;--parchment2:#efe0bd;--ink:#2b2118;--ink-soft:#5c4a33;--gold:#d4a437;--amber:#e8a33d;--ember:#c65b3c;--leaf:#7a9a5b;--rose:#c97a7a;--bronze:#b08d57}
+body{margin:0;font-family:"Spectral",Georgia,system-ui,serif;background:radial-gradient(1200px 500px at 50% -10%,#2a3a22 0%,var(--forest) 55%,#0d120a 100%);color:#f3ead3;line-height:1.6}
+a{color:#f0c96a}
+h1,h2,h3,details.group summary{font-family:"Cinzel",Georgia,serif;letter-spacing:.02em}
+.hero{position:relative}
+.hero img{width:100%;height:280px;object-fit:cover;display:block;filter:brightness(.82) sepia(.18) saturate(1.15);animation:heroDrift 26s ease-in-out infinite alternate}
+.hero-text{position:absolute;left:0;right:0;bottom:0;padding:28px 20px 18px;background:linear-gradient(transparent,rgba(20,16,6,.94))}
+h1{margin:0;font-size:30px;color:#f7e8c3;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.sub{opacity:.92;margin:6px 0 0;font-style:italic}
+.wrap{max-width:940px;margin:0 auto;padding:0 16px 64px}
+.card{background:linear-gradient(180deg,var(--parchment),var(--parchment2));color:var(--ink);border:1px solid #d8c49a;border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 10px 28px rgba(0,0,0,.35)}
+.card h2{margin:0 0 6px;color:#3a2a12;font-size:22px}
+.card h2::after{content:"";display:block;width:56px;height:3px;background:var(--gold);border-radius:99px;margin-top:8px}
+.score{display:flex;gap:12px;flex-wrap:wrap}
+.score>div{flex:1;min-width:150px;background:var(--forest2);color:#f3ead3;border:1px solid #6b5a2e;border-radius:14px;padding:16px;text-align:center}
+.score>div a{color:#f0c96a}
+.big{font-family:"Cinzel",Georgia,serif;font-size:36px;font-weight:800;color:#f7d774;animation:pop .6s ease both}
+.bar{height:10px;background:#0d120a;border-radius:99px;overflow:hidden;margin-top:10px;border:1px solid #6b5a2e}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--amber),var(--gold));transition:width 1.2s ease}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.filters button{background:#22301c;color:#f3ead3;border:1px solid #6b5a2e;border-radius:99px;padding:9px 15px;cursor:pointer;font-family:"Spectral",Georgia,serif}
+.filters button.on{background:var(--amber);border-color:var(--gold);color:#2b1d05;font-weight:600}
+details.group{background:linear-gradient(180deg,var(--parchment),var(--parchment2));color:var(--ink);border:1px solid #d8c49a;border-left:6px solid var(--phase,#d4a437);border-radius:16px;margin:14px 0;padding:6px 16px 14px;box-shadow:0 8px 22px rgba(0,0,0,.28)}
+details.group[data-group="phase0"]{--phase:#e8a33d}
+details.group[data-group="phase1"]{--phase:#c65b3c}
+details.group[data-group="phase2"]{--phase:#7a9a5b}
+details.group[data-group="phase3"]{--phase:#c97a7a}
+details.group[data-group="phase4"]{--phase:#b08d57}
+details.group[data-group="phase5"]{--phase:#d4a437}
+details.group summary{cursor:pointer;font-weight:700;font-size:18px;padding:12px 0;display:flex;justify-content:space-between;gap:10px;color:#3a2a12;transition:color .15s ease}
+details.group summary:hover{color:#8a5a12}
+details.group summary .count{background:var(--phase,#d4a437);color:#241a05;font-family:"Spectral",Georgia,serif;font-size:13px;font-weight:600;border-radius:99px;padding:2px 10px;align-self:center;white-space:nowrap}
+details.group.complete{border-color:#d4af37;background:linear-gradient(180deg,#f9efc8,#f6ead1)}
+.note{color:var(--ink-soft);margin:0 0 10px;font-style:italic}
+.ach{display:flex;gap:12px;padding:12px 0;border-top:1px solid #dcc79c;align-items:flex-start;transition:transform .15s ease}
 @media(hover:hover){.ach:hover{transform:translateY(-1px)}}
 .ach:active{transform:scale(.98)}
-.ach.done img.icon{animation:pop .5s ease both,glowPulse 2.4s ease-in-out infinite;border-radius:10px}
-details.group summary{transition:background .15s ease}
-details.group summary:hover{color:#bfe6ff}
-details.group.complete{border-color:#d4af37;background:#152a1e}
-button.refresh{transition:transform .15s ease,background .15s ease}
-button.refresh:hover{background:#3580c2}
+.ach img.icon{width:56px;height:56px;border-radius:12px;flex:none;background:#2b2118;border:1px solid #d8c49a}
+.ach-name{font-weight:700;font-family:"Cinzel",Georgia,serif;font-size:15px}
+.ach-desc{font-size:14px;color:var(--ink-soft)}
+.ach-status{font-size:13px;margin-top:3px;color:var(--ink-soft)}
+.tag{display:inline-block;background:#3a2a12;color:#f7e8c3;border-radius:99px;padding:1px 8px;font-size:12px;margin-right:6px}
+.tag.q{background:#8a5a12;color:#ffe9c4}
+.phase h3{margin:0 0 4px;color:#3a2a12}
+.phase p{margin:0 0 14px;color:var(--ink-soft)}
+.crown-row{display:flex;gap:10px;padding:9px 0;border-top:1px solid #dcc79c;flex-wrap:wrap}
+.crown-row b{min-width:170px;color:#3a2a12}
+button.refresh{background:linear-gradient(180deg,#f0c96a,#d4a437);color:#2b1d05;border:0;border-radius:99px;padding:11px 20px;font-size:15px;font-weight:700;cursor:pointer;font-family:"Cinzel",Georgia,serif;letter-spacing:.03em;box-shadow:0 4px 14px rgba(212,164,55,.35);transition:transform .15s ease,box-shadow .15s ease}
+button.refresh:hover{box-shadow:0 6px 20px rgba(212,164,55,.5)}
 button.refresh:active{transform:scale(.96)}
+.muted{opacity:.8;font-size:14px}
+.card .muted{color:var(--ink-soft)}
+@keyframes fall{0%{transform:translateY(-8vh) translateX(0);opacity:0}10%{opacity:.7}90%{opacity:.5}100%{transform:translateY(108vh) translateX(18px);opacity:0}}
+@keyframes pop{0%{transform:scale(.6);opacity:0}70%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
+@keyframes glowPulse{0%,100%{box-shadow:0 0 8px rgba(212,164,55,.5)}50%{box-shadow:0 0 18px rgba(212,164,55,.85)}}
+@keyframes heroDrift{from{transform:scale(1)}to{transform:scale(1.06)}}
+.snow{position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden}
+.snow span{position:absolute;top:-8vh;color:#ffe9c4;opacity:.55;animation:fall linear infinite}
+.ach.done img.icon{animation:pop .5s ease both,glowPulse 2.4s ease-in-out infinite}
+@media(max-width:600px){h1{font-size:24px}.hero img{height:210px}.card{padding:16px}}
 @media (prefers-reduced-motion: reduce){.snow,.hero img,.big,.ach.done img.icon{animation:none}.bar i{transition:none}}
 </style></head><body>
 <div class="snow" aria-hidden="true"><span style="left:3%;animation-delay:0s;animation-duration:14s;font-size:14px">❄</span><span style="left:9%;animation-delay:2s;animation-duration:18s;font-size:10px">❄</span><span style="left:16%;animation-delay:5s;animation-duration:13s;font-size:16px">❄</span><span style="left:24%;animation-delay:1s;animation-duration:17s;font-size:11px">❄</span><span style="left:31%;animation-delay:7s;animation-duration:15s;font-size:13px">❄</span><span style="left:38%;animation-delay:3s;animation-duration:19s;font-size:9px">❄</span><span style="left:46%;animation-delay:0s;animation-duration:14s;font-size:15px">❄</span><span style="left:53%;animation-delay:6s;animation-duration:16s;font-size:10px">❄</span><span style="left:61%;animation-delay:2s;animation-duration:18s;font-size:14px">❄</span><span style="left:68%;animation-delay:8s;animation-duration:13s;font-size:11px">❄</span><span style="left:75%;animation-delay:4s;animation-duration:17s;font-size:15px">❄</span><span style="left:82%;animation-delay:1s;animation-duration:15s;font-size:10px">❄</span><span style="left:90%;animation-delay:5s;animation-duration:19s;font-size:13px">❄</span><span style="left:97%;animation-delay:3s;animation-duration:14s;font-size:9px">❄</span></div>
