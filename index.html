@@ -307,7 +307,7 @@ function crownRender(){
     var mon=document.createElement('div'); mon.className='mon';
     mon.innerHTML='<img src="'+m.icon+'" alt="" loading="lazy"><b></b>';
     mon.querySelector('b').textContent=m.name; card.appendChild(mon);
-    if(CROWN_GUIDES[m.name]){ mon.classList.add('has-guide'); mon.title='Tap for crown guide'; mon.addEventListener('click',function(){showCrownGuide(m.name);}); }
+    if(typeof CROWN_GUIDES!=='undefined' && CROWN_GUIDES[m.name]){ mon.classList.add('has-guide'); mon.title='Tap for crown guide'; mon.addEventListener('click',function(){showCrownGuide(m.name);}); }
     var checks=document.createElement('div'); checks.className='checks';
     [['mini','Mini'],['gold','Gold']].forEach(function(c){
       var lab=document.createElement('label'); lab.className='cb'; lab.title=c[1]+' crown — '+m.name;
@@ -383,5 +383,6 @@ function showCrownGuide(name){
 document.getElementById('guideClose').addEventListener('click',guideClose);
 document.getElementById('guideModal').addEventListener('click',function(e){ if(e.target===this) guideClose(); });
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') guideClose(); });
+crownRender();
 render(FALLBACK); load();
 </script></body></html>
