@@ -9,7 +9,7 @@
 <meta name="description" content="Live Monster Hunter World: Iceborne 100% tracker for Ghost. and qunyx. — data from Steam.">
 <style>
 *{box-sizing:border-box}
-:root{--forest:#1d150c;--forest2:#2a1d11;--moss:#3a2a18;--parchment:#f6ead1;--parchment2:#efe0bd;--ink:#2b2118;--ink-soft:#5c4a33;--gold:#d4a437;--amber:#e8a33d;--ember:#c65b3c;--leaf:#7a9a5b;--rose:#c97a7a;--bronze:#b08d57}
+:root{--forest:#1d150c;--forest2:#2a1d11;--moss:#3a2a18;--parchment:#3a2a18;--parchment2:#2c1e11;--ink:#f3ead3;--ink-soft:#c9b48c;--gold:#d4a437;--amber:#e8a33d;--ember:#c65b3c;--leaf:#7a9a5b;--rose:#c97a7a;--bronze:#b08d57}
 body{margin:0;font-family:"Spectral",Georgia,system-ui,serif;background-color:var(--forest);background-image:radial-gradient(1200px 600px at 50% -10%,rgba(58,42,24,.85),rgba(58,42,24,0) 70%);background-repeat:no-repeat;color:#f3ead3;line-height:1.6}
 a{color:#f0c96a}
 h1,h2,h3,details.group summary{font-family:"Cinzel",Georgia,serif;letter-spacing:.02em}
@@ -21,8 +21,8 @@ h1,h2,h3,details.group summary{font-family:"Cinzel",Georgia,serif;letter-spacing
 @media(max-width:700px){.mural{display:none}}
 .sub{opacity:.92;margin:6px 0 0;font-style:italic}
 .wrap{max-width:940px;margin:0 auto;padding:0 16px 64px;position:relative;z-index:2}
-.card{background:linear-gradient(180deg,var(--parchment),var(--parchment2));color:var(--ink);border:1px solid #d8c49a;border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 10px 28px rgba(0,0,0,.35)}
-.card h2{margin:0 0 6px;color:#3a2a12;font-size:22px}
+.card{background:linear-gradient(180deg,var(--parchment),var(--parchment2));color:var(--ink);border:1px solid #6b5a2e;border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 10px 28px rgba(0,0,0,.35)}
+.card h2{margin:0 0 6px;color:#f7e8c3;font-size:22px}
 .card h2::after{content:"";display:block;width:56px;height:3px;background:var(--gold);border-radius:99px;margin-top:8px}
 .score-badge{text-align:center;margin:2px 0 6px}
 .score-badge img{width:min(300px,68vw);height:auto;display:block;margin:0 auto}
@@ -32,41 +32,41 @@ h1,h2,h3,details.group summary{font-family:"Cinzel",Georgia,serif;letter-spacing
 .big{font-family:"Cinzel",Georgia,serif;font-size:36px;font-weight:800;color:#f7d774;animation:pop .6s ease both}
 .bar{height:10px;background:#14100a;border-radius:99px;overflow:hidden;margin-top:10px;border:1px solid #6b5a2e}
 .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--amber),var(--gold));transition:width 1.2s ease}
-details.group{background:linear-gradient(180deg,var(--parchment),var(--parchment2));color:var(--ink);border:1px solid #d8c49a;border-left:6px solid var(--phase,#d4a437);border-radius:16px;margin:14px 0;padding:6px 16px 14px;box-shadow:0 8px 22px rgba(0,0,0,.28);overflow:hidden}
+details.group{background:linear-gradient(180deg,var(--parchment),var(--parchment2));color:var(--ink);border:1px solid #6b5a2e;border-left:6px solid var(--phase,#d4a437);border-radius:16px;margin:14px 0;padding:6px 16px 14px;box-shadow:0 8px 22px rgba(0,0,0,.28);overflow:hidden}
 details.group[data-group="phase0"]{--phase:#e8a33d}
 details.group[data-group="phase1"]{--phase:#c65b3c}
 details.group[data-group="phase2"]{--phase:#7a9a5b}
 details.group[data-group="phase3"]{--phase:#c97a7a}
 details.group[data-group="phase4"]{--phase:#b08d57}
 details.group[data-group="phase5"]{--phase:#d4a437}
-details.group summary{cursor:pointer;font-weight:700;font-size:18px;padding:12px 0;display:flex;justify-content:space-between;gap:10px;color:#3a2a12;transition:color .15s ease}
-details.group summary:hover{color:#8a5a12}
+details.group summary{cursor:pointer;font-weight:700;font-size:18px;padding:12px 0;display:flex;justify-content:space-between;gap:10px;color:#f7e8c3;transition:color .15s ease}
+details.group summary:hover{color:#f0c96a}
 details.group summary .count{background:var(--phase,#d4a437);color:#241a05;font-family:"Spectral",Georgia,serif;font-size:13px;font-weight:600;border-radius:99px;padding:2px 10px;align-self:center;white-space:nowrap}
-details.group.complete{border-color:#d4af37;background:linear-gradient(180deg,#f9efc8,#f6ead1)}
+details.group.complete{border-color:#d4af37;background:linear-gradient(180deg,#4a3416,#3a2a18)}
 .note{color:var(--ink-soft);margin:0 0 10px;font-style:italic}
 .ach-list{display:block !important;width:100%;max-width:100%}
-.ach-list>.ach{display:flex !important;flex-direction:row !important;flex:none !important;width:100% !important;max-width:100% !important;min-width:0;gap:12px;padding:12px 0;border-top:1px solid #dcc79c;align-items:flex-start;transition:transform .15s ease}
+.ach-list>.ach{display:flex !important;flex-direction:row !important;flex:none !important;width:100% !important;max-width:100% !important;min-width:0;gap:12px;padding:12px 0;border-top:1px solid #6b5a2e;align-items:flex-start;transition:transform .15s ease}
 .ach>div{flex:1 1 auto;min-width:0}
 @media(hover:hover){.ach:hover{transform:translateY(-1px)}}
 .ach:active{transform:scale(.98)}
-.ach img.icon{width:56px;height:56px;border-radius:12px;flex:none;background:#2b2118;border:1px solid #d8c49a}
+.ach img.icon{width:56px;height:56px;border-radius:12px;flex:none;background:#2b2118;border:1px solid #6b5a2e}
 .ach-name{font-weight:700;font-family:"Cinzel",Georgia,serif;font-size:15px}
 .ach-desc{font-size:14px;color:var(--ink-soft)}
 .ach-status{font-size:13px;margin-top:3px;color:var(--ink-soft)}
-.tag{display:inline-block;background:#3a2a12;color:#f7e8c3;border-radius:99px;padding:1px 8px;font-size:12px;margin-right:6px}
+.tag{display:inline-block;background:#241a05;color:#f7e8c3;border:1px solid #6b5a2e;border-radius:99px;padding:1px 8px;font-size:12px;margin-right:6px}
 .tag.q{background:#8a5a12;color:#ffe9c4}
-.phase h3{margin:0 0 4px;color:#3a2a12}
+.phase h3{margin:0 0 4px;color:#f7e8c3}
 .phase p{margin:0 0 14px;color:var(--ink-soft)}
 #crownRows{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
-.crown-group{grid-column:1/-1;font-family:"Cinzel",Georgia,serif;font-weight:700;color:#8a5a12;padding:10px 0 0;font-size:14px}
-.mon-card{background:#fffaf0;border:1px solid #dcc79c;border-radius:14px;padding:12px;box-shadow:0 2px 6px rgba(60,40,10,.12)}
+.crown-group{grid-column:1/-1;font-family:"Cinzel",Georgia,serif;font-weight:700;color:#e8b64c;padding:10px 0 0;font-size:14px}
+.mon-card{background:#2c1e11;border:1px solid #6b5a2e;border-radius:14px;padding:12px;box-shadow:0 2px 6px rgba(0,0,0,.4)}
 .mon-card .mon{display:block;text-align:center;margin-bottom:10px}
 .mon-card .mon img{width:112px;height:112px;border-radius:14px;background:#2b2118;object-fit:cover;margin:0 auto 8px;display:block}
 .mon-card .mon b{font-size:16px;display:block}
 .mon-card .checks{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.mon-card label.cb{display:flex;align-items:center;gap:7px;background:#f3e8c8;border:1px solid #dcc79c;border-radius:9px;padding:8px 9px;font-size:13px;cursor:pointer}
+.mon-card label.cb{display:flex;align-items:center;gap:7px;background:#3a2a18;border:1px solid #6b5a2e;border-radius:9px;padding:8px 9px;font-size:13px;cursor:pointer}
 .mon-card label.cb input{width:20px;height:20px;accent-color:#d4a437;cursor:pointer;margin:0;flex:none}
-.mon-card label.cb:has(input:checked){background:#ffe9a8;border-color:#d4a437;font-weight:700}
+.mon-card label.cb:has(input:checked){background:#6b4d1a;border-color:#d4a437;font-weight:700;color:#ffe9a8}
 .mon-card.all-done{border-color:#d4a437;box-shadow:0 0 0 2px rgba(212,164,55,.35)}
 .mon-card.all-done .mon b::after{content:" \1F451";font-size:13px}
 @media(max-width:600px){#crownRows{grid-template-columns:repeat(2,1fr);gap:10px}.mon-card .mon img{width:88px;height:88px}}
