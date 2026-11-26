@@ -58,7 +58,6 @@ details.group.complete{border-color:#d4af37;background:linear-gradient(180deg,#4
 .phase h3{margin:0 0 4px;color:#f7e8c3}
 .phase p{margin:0 0 14px;color:var(--ink-soft)}
 #crownRows{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
-.crown-group{grid-column:1/-1;font-family:"Cinzel",Georgia,serif;font-weight:700;color:#e8b64c;padding:10px 0 0;font-size:14px}
 .mon-card{background:#2c1e11;border:1px solid #6b5a2e;border-radius:14px;padding:12px;box-shadow:0 2px 6px rgba(0,0,0,.4)}
 .mon-card .mon{display:block;text-align:center;margin-bottom:10px}
 .mon-card .mon img{width:112px;height:112px;border-radius:14px;background:#2b2118;object-fit:cover;margin:0 auto 8px;display:block}
@@ -287,9 +286,8 @@ function crownPushSoon(){
 }
 function crownRender(){
   var wrap=document.getElementById('crownRows'); wrap.innerHTML='';
-  var counts={mini:0,gold:0}, group='';
+  var counts={mini:0,gold:0};
   CROWNS.forEach(function(m){
-    if(m.group!==group){group=m.group; var gh=document.createElement('div'); gh.className='crown-group'; gh.textContent=group+(group==='Investigations only'?'':' — music quest'); wrap.appendChild(gh);}
     var card=document.createElement('div'); card.className='mon-card';
     var mon=document.createElement('div'); mon.className='mon';
     mon.innerHTML='<img src="'+m.icon+'" alt="" loading="lazy"><b></b>';
