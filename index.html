@@ -71,8 +71,9 @@ details.group.complete summary .count{background:#5da85a;color:#1a2b12}
 .mon-card label.cb{display:flex;align-items:center;gap:7px;background:#3a2a18;border:1px solid #6b5a2e;border-radius:9px;padding:8px 9px;font-size:13px;cursor:pointer}
 .mon-card label.cb input{width:20px;height:20px;accent-color:#d4a437;cursor:pointer;margin:0;flex:none}
 .mon-card label.cb:has(input:checked){background:#6b4d1a;border-color:#d4a437;font-weight:700;color:#ffe9a8}
-.mon-card.all-done{border-color:#d4a437;box-shadow:0 0 0 2px rgba(212,164,55,.35)}
-.mon-card.all-done .mon b::after{content:" \1F451";font-size:13px}
+.mon-card.all-done{border:2px solid #d4a437;box-shadow:0 0 14px rgba(212,164,55,.45)}
+.mon-card.all-done .mon img{box-shadow:0 0 0 3px #d4a437,0 0 14px rgba(212,164,55,.5)}
+.mon-card.all-done .mon b::after{content:" \1F451";font-size:18px}
 @media(max-width:600px){#crownRows{grid-template-columns:repeat(2,1fr);gap:10px}.mon-card .mon img{width:88px;height:88px}}
 button.refresh{background:linear-gradient(180deg,#f0c96a,#d4a437);color:#2b1d05;border:0;border-radius:99px;padding:11px 20px;font-size:15px;font-weight:700;cursor:pointer;font-family:"Cinzel",Georgia,serif;letter-spacing:.03em;box-shadow:0 4px 14px rgba(212,164,55,.35);transition:transform .15s ease,box-shadow .15s ease}
 button.refresh:hover{box-shadow:0 6px 20px rgba(212,164,55,.5)}
