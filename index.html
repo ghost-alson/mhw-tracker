@@ -12,13 +12,13 @@
 body{margin:0;font-family:"Spectral",Georgia,system-ui,serif;background:radial-gradient(1200px 500px at 50% -10%,#2a3a22 0%,var(--forest) 55%,#0d120a 100%);color:#f3ead3;line-height:1.6}
 a{color:#f0c96a}
 h1,h2,h3,details.group summary{font-family:"Cinzel",Georgia,serif;letter-spacing:.02em}
- .hero{position:relative;min-height:min(78vh,720px);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;filter:brightness(.86) sepia(.18) saturate(1.15);animation:heroDrift 26s ease-in-out infinite alternate}
-.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(20,27,16,.28) 0%,rgba(20,27,16,0) 28%,rgba(20,27,16,0) 52%,rgba(20,27,16,.45) 76%,var(--forest) 98%)}
-.hero-text{position:relative;z-index:1;padding:28px 20px 56px;background:none}
+ .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-start;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;display:block;filter:brightness(.88) sepia(.18) saturate(1.15);animation:heroDrift 26s ease-in-out infinite alternate}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(20,27,16,.22) 0%,rgba(20,27,16,0) 22%,rgba(20,27,16,0) 38%,rgba(20,27,16,.28) 55%,rgba(20,27,16,.62) 72%,rgba(20,27,16,.9) 88%,var(--forest) 100%)}
+.hero-text{position:relative;z-index:1;padding:26vh 20px 0;background:none;max-width:940px;margin:0 auto;width:100%}
 h1{margin:0;font-size:30px;color:#f7e8c3;text-shadow:0 2px 12px rgba(0,0,0,.6)}
 .sub{opacity:.92;margin:6px 0 0;font-style:italic}
-.wrap{max-width:940px;margin:0 auto;padding:0 16px 64px}
+.wrap{max-width:940px;margin:-34vh auto 0;padding:0 16px 64px;position:relative;z-index:2}
 .card{background:linear-gradient(180deg,var(--parchment),var(--parchment2));color:var(--ink);border:1px solid #d8c49a;border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 10px 28px rgba(0,0,0,.35)}
 .card h2{margin:0 0 6px;color:#3a2a12;font-size:22px}
 .card h2::after{content:"";display:block;width:56px;height:3px;background:var(--gold);border-radius:99px;margin-top:8px}
@@ -70,7 +70,7 @@ button.refresh:active{transform:scale(.96)}
 .snow{position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden}
 .snow span{position:absolute;top:-8vh;color:#ffe9c4;opacity:.55;animation:fall linear infinite}
 .ach.done img.icon{animation:pop .5s ease both,glowPulse 2.4s ease-in-out infinite}
-@media(max-width:600px){h1{font-size:24px}.hero{min-height:62vh}.card{padding:16px}}
+@media(max-width:600px){h1{font-size:24px}.hero{min-height:88vh}.hero-text{padding-top:22vh}.wrap{margin-top:-30vh}.card{padding:16px}}
 @media (prefers-reduced-motion: reduce){.snow,.hero img,.big,.ach.done img.icon{animation:none}.bar i{transition:none}}
 </style></head><body>
 <div class="snow" aria-hidden="true"><span style="left:3%;animation-delay:0s;animation-duration:14s;font-size:14px">❄</span><span style="left:9%;animation-delay:2s;animation-duration:18s;font-size:10px">❄</span><span style="left:16%;animation-delay:5s;animation-duration:13s;font-size:16px">❄</span><span style="left:24%;animation-delay:1s;animation-duration:17s;font-size:11px">❄</span><span style="left:31%;animation-delay:7s;animation-duration:15s;font-size:13px">❄</span><span style="left:38%;animation-delay:3s;animation-duration:19s;font-size:9px">❄</span><span style="left:46%;animation-delay:0s;animation-duration:14s;font-size:15px">❄</span><span style="left:53%;animation-delay:6s;animation-duration:16s;font-size:10px">❄</span><span style="left:61%;animation-delay:2s;animation-duration:18s;font-size:14px">❄</span><span style="left:68%;animation-delay:8s;animation-duration:13s;font-size:11px">❄</span><span style="left:75%;animation-delay:4s;animation-duration:17s;font-size:15px">❄</span><span style="left:82%;animation-delay:1s;animation-duration:15s;font-size:10px">❄</span><span style="left:90%;animation-delay:5s;animation-duration:19s;font-size:13px">❄</span><span style="left:97%;animation-delay:3s;animation-duration:14s;font-size:9px">❄</span></div>
