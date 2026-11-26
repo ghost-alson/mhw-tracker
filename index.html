@@ -103,8 +103,9 @@ button.refresh:active{transform:scale(.96)}
 <div class="card"><h2 style="margin-top:0">The efficient plan</h2><div class="phase"><h3>Phase 0 — 5-minute freebies</h3><p>First session. qunyx.: steak + upgraded room. Both: catch a fish, change room once, first arena quest.</p></div><div class="phase"><h3>Phase 1 — Finish the Iceborne story</h3><p>MR4 → MR5 → Shara → Guiding Lands → Ruiner Nergigante. Take turns hosting.</p></div><div class="phase"><h3>Phase 2 — The stacking grind</h3><p>Guiding Lands + tempered / elder / variant investigations together. Capture when you can. Share good investigations.</p></div><div class="phase"><h3>Phase 3 — Collectibles in chill batches</h3><p>Rare endemic life, treasures (one locale per session), Lynian photos.</p></div><div class="phase"><h3>Phase 4 — Arena + gear filler</h3><p>Arena 50 in small batches. Craft R12 gear as you go.</p></div><div class="phase"><h3>Phase 5 — Crowns + MR200 LAST</h3><p>Crown-sniping only after Phases 1–2. Base crowns first, then True crowns.</p></div></div>
 
 <div class="card"><h2 style="margin-top:0">Crown tracker — the 28 base-game crown monsters</h2>
-<p class="muted">Mini + gold large for each. Steam can&apos;t track crowns, so tick these yourself — they save on this device.</p>
-<p id="crownCounts" class="muted" style="font-weight:600;color:#3a2a12"></p>
+<p class="muted">Mini + gold large for each — one shared tick, since you hunt together. Steam can&apos;t track crowns, so tick these yourself — they sync across devices.</p>
+<p id="crownCounts" class="muted" style="font-weight:600;color:#f7e8c3"></p>
+<p id="crownSync" class="muted"></p>
 <div id="crownRows"></div>
 <p class="muted">True crowns: Iceborne monsters + Deviljho / Lunastra. No crown for Shara.</p>
 <p><button class="refresh" id="crownReset" style="padding:8px 16px;font-size:13px">Reset crowns</button></p>
@@ -242,12 +243,51 @@ function render(data){
 }
 document.getElementById('refreshBtn').addEventListener('click',function(){load();});
 var CROWNS=[{"name": "Great Jagras", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/2/2d/MHW-Great_Jagras_Icon.png/revision/latest?cb=20210724005447", "group": "Deep Green Blues"}, {"name": "Pukei-Pukei", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/b/b5/MHW-Pukei-Pukei_Icon.png/revision/latest?cb=20210724010356", "group": "Deep Green Blues"}, {"name": "Tobi-Kadachi", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/c/cf/MHW-Tobi-Kadachi_Icon.png/revision/latest?cb=20210724010601", "group": "Deep Green Blues"}, {"name": "Anjanath", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/5/58/MHW-Anjanath_Icon.png/revision/latest?cb=20210724004305", "group": "Deep Green Blues"}, {"name": "Rathalos", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/8/8c/MHW-Rathalos_Icon.png/revision/latest?cb=20210724001238", "group": "Deep Green Blues"}, {"name": "Kulu-Ya-Ku", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/c/ca/MHW-Kulu-Ya-Ku_Icon.png/revision/latest?cb=20210724005910", "group": "Wildspire Bolero"}, {"name": "Barroth", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/0/0a/MHW-Barroth_Icon.png/revision/latest?cb=20210724004639", "group": "Wildspire Bolero"}, {"name": "Jyuratodus", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/d/da/MHW-Jyuratodus_Icon.png/revision/latest?cb=20210724005639", "group": "Wildspire Bolero"}, {"name": "Rathian", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/3/32/MHW-Rathian_Icon.png/revision/latest?cb=20210724202821", "group": "Wildspire Bolero"}, {"name": "Diablos", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/4/47/MHW-Diablos_Icon.png/revision/latest?cb=20210723233759", "group": "Wildspire Bolero"}, {"name": "Tzitzi-Ya-Ku", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/0/01/MHW-Tzitzi-Ya-Ku_Icon.png/revision/latest?cb=20210724010628", "group": "Coral Waltz"}, {"name": "Paolumu", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/0/04/MHW-Paolumu_Icon.png/revision/latest?cb=20210724010333", "group": "Coral Waltz"}, {"name": "Pink Rathian", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/1/15/MHW-Pink_Rathian_Icon.png/revision/latest?cb=20210724001151", "group": "Coral Waltz"}, {"name": "Legiana", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/1/13/MHW-Legiana_Icon.png/revision/latest?cb=20210724010027", "group": "Coral Waltz"}, {"name": "Great Girros", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/e/e1/MHW-Great_Girros_Icon.png/revision/latest?cb=20210724005358", "group": "Effluvial Opera"}, {"name": "Radobaan", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/2/23/MHW-Radobaan_Icon.png/revision/latest?cb=20210724010413", "group": "Effluvial Opera"}, {"name": "Odogaron", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/f/fd/MHW-Odogaron_Icon.png/revision/latest?cb=20210724010311", "group": "Effluvial Opera"}, {"name": "Bazelgeuse", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/5/57/MHW-Bazelgeuse_Icon.png/revision/latest?cb=20210724004724", "group": "Effluvial Opera"}, {"name": "Dodogama", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/3/3e/MHW-Dodogama_Icon.png/revision/latest?cb=20210724005026", "group": "Rock N' Roll Recess"}, {"name": "Uragaan", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/5/5f/MHW-Uragaan_Icon.png/revision/latest?cb=20210724010821", "group": "Rock N' Roll Recess"}, {"name": "Lavasioth", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/2/25/MHW-Lavasioth_Icon.png/revision/latest?cb=20210724001044", "group": "Rock N' Roll Recess"}, {"name": "Azure Rathalos", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/8/8e/MHW-Azure_Rathalos_Icon.png/revision/latest?cb=20210723233615", "group": "Rock N' Roll Recess"}, {"name": "Black Diablos", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/d/dc/MHW-Black_Diablos_Icon.png/revision/latest?cb=20210723233716", "group": "Investigations only"}, {"name": "Kirin", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/8/81/MHW-Kirin_Icon.png/revision/latest?cb=20210724000855", "group": "Investigations only"}, {"name": "Nergigante", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/4/4c/MHW-Nergigante_Icon.png/revision/latest?cb=20210724010228", "group": "Investigations only"}, {"name": "Teostra", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/d/d7/MHW-Teostra_Icon.png/revision/latest?cb=20210724010546", "group": "Investigations only"}, {"name": "Kushala Daora", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/e/e2/MHW-Kushala_Daora_Icon.png/revision/latest?cb=20210724000948", "group": "Investigations only"}, {"name": "Vaal Hazak", "icon": "https://static.wikia.nocookie.net/monsterhunter/images/f/fb/MHW-Vaal_Hazak_Icon.png/revision/latest?cb=20210724010833", "group": "Investigations only"}];
-function crownKey(){return 'mhw-crowns-v1'}
-function crownLoad(){try{return JSON.parse(localStorage.getItem(crownKey()))||{}}catch(e){return {}}}
-function crownSave(d){try{localStorage.setItem(crownKey(),JSON.stringify(d))}catch(e){}}
+var CROWN_BIN_URL="https://extendsclass.com/api/json-storage/bin/fdacdac";
+var crownState={};
+function crownLoadLocal(){try{return JSON.parse(localStorage.getItem('mhw-crowns-v2'))||{}}catch(e){return {}}}
+function crownSaveLocal(d){try{localStorage.setItem('mhw-crowns-v2',JSON.stringify(d))}catch(e){}}
+function crownMigrateV1(){
+  try{
+    var v1=JSON.parse(localStorage.getItem('mhw-crowns-v1')||'null');
+    if(!v1) return {};
+    var out={};
+    Object.keys(v1).forEach(function(n){ var o=v1[n]||{}; out[n]={mini:!!(o.ghostMini||o.qunyxMini), gold:!!(o.ghostGold||o.qunyxGold)}; });
+    return out;
+  }catch(e){ return {}; }
+}
+function crownExtract(text){
+  var i=text.indexOf('{'); if(i<0) return null;
+  var depth=0, inStr=false, esc=false;
+  for(var j=i;j<text.length;j++){
+    var c=text[j];
+    if(inStr){ if(esc) esc=false; else if(c==='\\') esc=true; else if(c==='"') inStr=false; }
+    else if(c==='"') inStr=true;
+    else if(c==='{') depth++;
+    else if(c==='}'){ depth--; if(depth===0){ try{ return JSON.parse(text.slice(i,j+1)); }catch(e){ return null; } } }
+  }
+  return null;
+}
+function crownFetchRemote(){
+  if(typeof fetch!=="function") return Promise.resolve(null);
+  return fetch(CROWN_BIN_URL+"?cb="+Date.now(),{cache:"no-store"}).then(function(r){ if(!r.ok) return null; return r.text(); }).then(function(t){ var j=crownExtract(t); return (j&&j.crowns)?j.crowns:null; }).catch(function(){ return null; });
+}
+function crownPushRemote(crowns){
+  if(typeof fetch!=="function") return Promise.resolve(false);
+  return fetch(CROWN_BIN_URL,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify({v:1,crowns:crowns})}).then(function(r){ return !!r.ok; }).catch(function(){ return false; });
+}
+function crownSetSync(msg){ var el=document.getElementById('crownSync'); if(el) el.textContent=msg; }
+var crownSaveTimer=null;
+function crownPushSoon(){
+  crownSetSync('Saving…');
+  if(crownSaveTimer) clearTimeout(crownSaveTimer);
+  crownSaveTimer=setTimeout(function(){
+    crownPushRemote(crownState).then(function(ok){ crownSetSync(ok?'Synced across devices ✓':'Saved on this device — shared store unreachable, will retry on next change'); });
+  },600);
+}
 function crownRender(){
-  var saved=crownLoad(), wrap=document.getElementById('crownRows'); wrap.innerHTML='';
-  var counts={ghostMini:0,ghostGold:0,qunyxMini:0,qunyxGold:0}, group='';
+  var wrap=document.getElementById('crownRows'); wrap.innerHTML='';
+  var counts={mini:0,gold:0}, group='';
   CROWNS.forEach(function(m){
     if(m.group!==group){group=m.group; var gh=document.createElement('div'); gh.className='crown-group'; gh.textContent=group+(group==='Investigations only'?'':' — music quest'); wrap.appendChild(gh);}
     var card=document.createElement('div'); card.className='mon-card';
@@ -255,29 +295,37 @@ function crownRender(){
     mon.innerHTML='<img src="'+m.icon+'" alt="" loading="lazy"><b></b>';
     mon.querySelector('b').textContent=m.name; card.appendChild(mon);
     var checks=document.createElement('div'); checks.className='checks';
-    [['ghost','mini'],['ghost','gold'],['qunyx','mini'],['qunyx','gold']].forEach(function(c){
-      var key=c[0]+c[1][0].toUpperCase()+c[1].slice(1);
-      var lab=document.createElement('label'); lab.className='cb'; lab.title=(c[0]==='ghost'?'Ghost.':'qunyx.')+' '+c[1]+' crown — '+m.name;
+    [['mini','Mini'],['gold','Gold']].forEach(function(c){
+      var lab=document.createElement('label'); lab.className='cb'; lab.title=c[1]+' crown — '+m.name;
       var cb=document.createElement('input'); cb.type='checkbox';
-      cb.checked=!!(saved[m.name]&&saved[m.name][key]);
-      if(cb.checked) counts[key]++;
+      cb.checked=!!(crownState[m.name]&&crownState[m.name][c[0]]);
+      if(cb.checked) counts[c[0]]++;
       cb.addEventListener('change',function(){
-        var d=crownLoad(); d[m.name]=d[m.name]||{};
-        d[m.name][key]=cb.checked;
-        crownSave(d); crownRender();
+        crownState[m.name]=crownState[m.name]||{};
+        crownState[m.name][c[0]]=cb.checked;
+        crownSaveLocal(crownState); crownRender(); crownPushSoon();
       });
-      var sp=document.createElement('span'); sp.textContent=(c[0]==='ghost'?'Ghost.':'qunyx.')+' '+c[1];
+      var sp=document.createElement('span'); sp.textContent=c[1];
       lab.appendChild(cb); lab.appendChild(sp); checks.appendChild(lab);
     });
     card.appendChild(checks);
-    var st=saved[m.name]||{};
-    if(st.ghostMini&&st.ghostGold&&st.qunyxMini&&st.qunyxGold) card.classList.add('all-done');
+    var st=crownState[m.name]||{};
+    if(st.mini&&st.gold) card.classList.add('all-done');
     wrap.appendChild(card);
   });
-  document.getElementById('crownCounts').textContent='Ghost.: '+counts.ghostMini+' mini · '+counts.ghostGold+' gold  —  qunyx.: '+counts.qunyxMini+' mini · '+counts.qunyxGold+' gold  (of 28 each)';
+  document.getElementById('crownCounts').textContent=counts.mini+' mini · '+counts.gold+' gold  (of 28)';
 }
-document.getElementById('crownReset').addEventListener('click',function(){if(confirm('Clear all crown ticks?')){crownSave({});crownRender();}});
+document.getElementById('crownReset').addEventListener('click',function(){if(confirm('Clear all crown ticks?')){crownState={};crownSaveLocal(crownState);crownRender();crownPushSoon();}});
+crownState=crownLoadLocal();
+if(!Object.keys(crownState).length){ var mig=crownMigrateV1(); if(Object.keys(mig).length){ crownState=mig; crownSaveLocal(crownState); } }
 crownRender();
+crownFetchRemote().then(function(remote){
+  if(!remote){ crownSetSync('Saved on this device — shared store unreachable'); return; }
+  var remoteTicks=Object.keys(remote).filter(function(n){ return remote[n]&&(remote[n].mini||remote[n].gold); }).length;
+  var localTicks=Object.keys(crownState).filter(function(n){ return crownState[n]&&(crownState[n].mini||crownState[n].gold); }).length;
+  if(remoteTicks===0 && localTicks>0){ crownPushRemote(crownState).then(function(ok){ crownSetSync(ok?'Synced across devices ✓':'Saved on this device — shared store unreachable'); }); return; }
+  crownState=remote; crownSaveLocal(crownState); crownRender(); crownSetSync('Synced across devices ✓');
+});
 
 render(FALLBACK); load();
 </script></body></html>
