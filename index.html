@@ -31,7 +31,7 @@ h1{margin:0;font-size:30px;color:#f7e8c3;text-shadow:0 2px 12px rgba(0,0,0,.6)}
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
 .filters button{background:#22301c;color:#f3ead3;border:1px solid #6b5a2e;border-radius:99px;padding:9px 15px;cursor:pointer;font-family:"Spectral",Georgia,serif}
 .filters button.on{background:var(--amber);border-color:var(--gold);color:#2b1d05;font-weight:600}
-details.group{background:linear-gradient(180deg,var(--parchment),var(--parchment2));color:var(--ink);border:1px solid #d8c49a;border-left:6px solid var(--phase,#d4a437);border-radius:16px;margin:14px 0;padding:6px 16px 14px;box-shadow:0 8px 22px rgba(0,0,0,.28)}
+details.group{background:linear-gradient(180deg,var(--parchment),var(--parchment2));color:var(--ink);border:1px solid #d8c49a;border-left:6px solid var(--phase,#d4a437);border-radius:16px;margin:14px 0;padding:6px 16px 14px;box-shadow:0 8px 22px rgba(0,0,0,.28);overflow:hidden}
 details.group[data-group="phase0"]{--phase:#e8a33d}
 details.group[data-group="phase1"]{--phase:#c65b3c}
 details.group[data-group="phase2"]{--phase:#7a9a5b}
@@ -43,7 +43,9 @@ details.group summary:hover{color:#8a5a12}
 details.group summary .count{background:var(--phase,#d4a437);color:#241a05;font-family:"Spectral",Georgia,serif;font-size:13px;font-weight:600;border-radius:99px;padding:2px 10px;align-self:center;white-space:nowrap}
 details.group.complete{border-color:#d4af37;background:linear-gradient(180deg,#f9efc8,#f6ead1)}
 .note{color:var(--ink-soft);margin:0 0 10px;font-style:italic}
-.ach{display:flex;gap:12px;padding:12px 0;border-top:1px solid #dcc79c;align-items:flex-start;transition:transform .15s ease}
+.ach-list{display:block;width:100%}
+.ach{display:flex;width:100%;min-width:0;gap:12px;padding:12px 0;border-top:1px solid #dcc79c;align-items:flex-start;transition:transform .15s ease}
+.ach>div{flex:1;min-width:0}
 @media(hover:hover){.ach:hover{transform:translateY(-1px)}}
 .ach:active{transform:scale(.98)}
 .ach img.icon{width:56px;height:56px;border-radius:12px;flex:none;background:#2b2118;border:1px solid #d8c49a}
