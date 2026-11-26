@@ -342,9 +342,6 @@ if(!Object.keys(crownState).length){ var mig=crownMigrateV1(); if(Object.keys(mi
 crownRender();
 crownFetchRemote().then(function(remote){
   if(!remote){ return; }
-  var remoteTicks=Object.keys(remote).filter(function(n){ return remote[n]&&(remote[n].mini||remote[n].gold); }).length;
-  var localTicks=Object.keys(crownState).filter(function(n){ return crownState[n]&&(crownState[n].mini||crownState[n].gold); }).length;
-  if(remoteTicks===0 && localTicks>0){ crownPushRemote(crownState); return; }
   crownState=remote; crownSaveLocal(crownState); crownRender();
 });
 
