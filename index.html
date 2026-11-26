@@ -100,7 +100,6 @@ button.refresh:active{transform:scale(.96)}
 <p id="updated" class="muted" style="text-align:center;margin:0">Last updated: 27 Nov 2026</p>
 </div>
 
-<div class="card"><h2 style="margin-top:0">qunyx.-only catch-ups (2)</h2><p>Ghost. has these already:</p><div id="catchups"></div></div>
 
 <div class="card"><h2 style="margin-top:0">The efficient plan</h2><div class="phase"><h3>Phase 0 — 5-minute freebies</h3><p>First session. qunyx.: steak + upgraded room. Both: catch a fish, change room once, first arena quest.</p></div><div class="phase"><h3>Phase 1 — Finish the Iceborne story</h3><p>MR4 → MR5 → Shara → Guiding Lands → Ruiner Nergigante. Take turns hosting.</p></div><div class="phase"><h3>Phase 2 — The stacking grind</h3><p>Guiding Lands + tempered / elder / variant investigations together. Capture when you can. Share good investigations.</p></div><div class="phase"><h3>Phase 3 — Collectibles in chill batches</h3><p>Rare endemic life, treasures (one locale per session), Lynian photos.</p></div><div class="phase"><h3>Phase 4 — Arena + gear filler</h3><p>Arena 50 in small batches. Craft R12 gear as you go.</p></div><div class="phase"><h3>Phase 5 — Crowns + MR200 LAST</h3><p>Crown-sniping only after Phases 1–2. Base crowns first, then True crowns.</p></div></div>
 
@@ -203,13 +202,6 @@ function render(data){
   var bothMissing=0; Object.keys(am).forEach(function(n){if(!am[n].unlocked && !qm[n].unlocked) bothMissing++});
   document.getElementById('bothMissing').textContent=bothMissing;
   var _d=new Date(data.updated_at); document.getElementById('updated').textContent='Last updated: '+(isNaN(_d)?data.updated_at:_d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}));
-  // catchups: unlocked by Ghost., locked by qunyx
-  var cu=document.getElementById('catchups'); cu.innerHTML='';
-  Object.keys(am).forEach(function(n){ if(am[n].unlocked && !qm[n].unlocked){
-    var d=document.createElement('div'); d.className='ach';
-    d.innerHTML='<img class="icon" src="'+am[n].iconOpen+'" alt=""><div><div class="ach-name"></div><div class="ach-desc"></div><div class="ach-status"><span class="tag q">qunyx. only</span>qunyx. still needs it.</div></div>';
-    d.querySelector('.ach-name').textContent=n; d.querySelector('.ach-desc').textContent=am[n].desc; cu.appendChild(d);
-  }});
   // groups
   document.querySelectorAll('.ach[data-name]').forEach(function(el){
     var n=el.getAttribute('data-name'); var a=am[n], q=qm[n];
