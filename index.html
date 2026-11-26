@@ -110,7 +110,6 @@ button.refresh:active{transform:scale(.96)}
 <p id="crownSync" class="muted"></p>
 <div id="crownRows"></div>
 <p class="muted">True crowns: Iceborne monsters + Deviljho / Lunastra. No crown for Shara.</p>
-<p><button class="refresh" id="crownReset" style="padding:8px 16px;font-size:13px">Reset crowns</button></p>
 </div>
 
 <div id="groups">
@@ -316,7 +315,6 @@ function crownRender(){
   });
   document.getElementById('crownCounts').textContent=counts.mini+' mini · '+counts.gold+' gold  (of 28)';
 }
-document.getElementById('crownReset').addEventListener('click',function(){if(confirm('Clear all crown ticks?')){crownState={};crownSaveLocal(crownState);crownRender();crownPushSoon();}});
 crownState=crownLoadLocal();
 if(!Object.keys(crownState).length){ var mig=crownMigrateV1(); if(Object.keys(mig).length){ crownState=mig; crownSaveLocal(crownState); } }
 crownRender();
