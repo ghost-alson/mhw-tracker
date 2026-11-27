@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T03:59:00+08:00",
+  "updated_at": "2026-11-27T08:17:24+08:00",
   "game": "Monster Hunter: World (582010)",
   "players": {
     "alson": {
@@ -1616,6 +1616,5 @@
         }
       ]
     }
-  },
-  "source": "Steam achievement XML, pulled 27 Nov 2026"
+  }
 }
